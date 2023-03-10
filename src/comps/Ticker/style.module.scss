@@ -1,0 +1,47 @@
+.ticker {
+  background: #2e9cb0;
+  overflow: hidden;
+  height: 45px !important;
+  border-radius: 111px;
+  padding-top: 8px;
+}
+
+.tickerItems {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.tickerItem {
+  //   display: grid;
+  display: inline-block;
+  margin: 0 16px;
+  align-content: center;
+  width: 170px;
+  color: white;
+  span {
+    font-size: 12px;
+    line-height: 16px;
+    display: inline-block;
+  }
+  & > div {
+    align-items: center;
+    column-gap: 8px;
+    display: grid;
+    grid-template-columns: 40px 30px repeat(2, 40px);
+    & > div {
+      &:nth-child(1) {
+        text-align: center;
+      }
+      &:nth-child(2) {
+        display: grid;
+        place-items: center;
+        img {
+          width: 30px;
+        }
+      }
+      &:nth-child(3) {
+        align-self: center;
+      }
+    }
+  }
+}
