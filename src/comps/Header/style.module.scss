@@ -14,8 +14,9 @@
     object-fit: cover;
   }
 
-  button {
+  a {
     color: white;
+    text-decoration: none;
     background-color: #e5571b;
     border: none;
     margin-left: 50px;
@@ -28,7 +29,7 @@
     font-weight: 700;
     transition: 0.3s;
   }
-  button:hover {
+  a:hover {
     background-color: #006181;
   }
 }
