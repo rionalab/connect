@@ -3,23 +3,18 @@ import { Button } from "primereact/button";
 import { Dialog } from "primereact/dialog";
 import style from "./style.module.scss";
 
-function BirthdayModal() {
-  const [visible, setVisible] = useState(false);
+function BirthdayModal(props) {
+  const { visible, toggleModal } = props;
 
   return (
     <div className="">
-      <Button
-        label="Show"
-        icon="pi pi-external-link"
-        onClick={() => setVisible(true)}
-      />
       <Dialog
         visible={visible}
         style={{ width: "400px" }}
         modal={false}
         draggable={false}
         resizable={false}
-        onHide={() => setVisible(false)}
+        onHide={toggleModal}
         className={style.dialog + " birthdayDialog"}
       >
         <div className={style.content}>
@@ -28,11 +23,7 @@ function BirthdayModal() {
             src="/birthday-banner.png"
             alt="Birthday Banner"
           />
-          <img
-            className={style.profile}
-            src="/birthday-banner.png"
-            alt="Profile Pic"
-          />
+          <img className={style.profile} src="/e.png" alt="Profile Pic" />
           <div className={style.text}>
             <h4>Happy Birthday!</h4>
             <h3>Rini Suherman</h3>

@@ -2,7 +2,6 @@ import Header from "comps/Header";
 import Ticker from "comps/Ticker";
 import BodyTop from "comps/BodyTop";
 import React from "react";
-import BirthdayModal from "comps/modals/BIrthdayModal";
 import style from "./style.module.scss";
 
 function Homepage() {
