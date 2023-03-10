@@ -1,0 +1,11 @@
+{
+  "data": [
+    { "name": "JPY", "sell": 120, "buy": 111 },
+    { "name": "SAR", "sell": 120, "buy": 111 },
+    { "name": "MYR", "sell": 120, "buy": 111 },
+    { "name": "THB", "sell": 120, "buy": 111 },
+    { "name": "NZD", "sell": 120, "buy": 111 },
+    { "name": "USD", "sell": 120, "buy": 111 },
+    { "name": "IDR", "sell": 120, "buy": 111 }
+  ]
+}
