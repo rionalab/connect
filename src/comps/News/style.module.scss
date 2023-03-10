@@ -1,0 +1,84 @@
+.sliderItem {
+  height: 400px;
+  position: relative;
+  img {
+    z-index: 3;
+    border-radius: 4px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.container {
+  overflow: hidden;
+  margin-top: 16px;
+  max-width: 100%;
+}
+
+// .label {
+//   overflow: hidden;
+//   margin-top: 8px;
+//   font-family: "Poppins", sans-serif;
+//   font-weight: 600;
+//   color: #333;
+//   font-size: 16px;
+//   height: 100px;
+// }
+
+.btn {
+  background: transparent;
+  border: 0;
+  font-weight: bold;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 6px 20px;
+}
+
+.select {
+  display: inline-block;
+  border: 1px solid #ccc;
+  height: 30px;
+  width: 220px;
+  border-radius: 222px;
+  padding-left: 8px;
+}
+
+.more {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  &:hover {
+    text-decoration: underline;
+    color: #2e9cb0;
+  }
+}
+
+.selectcontainer {
+  text-align: right;
+}
+
+.filter {
+  display: grid;
+  margin-bottom: 12px;
+  height: 30px;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.btnActive {
+  background: #ff5721;
+  color: white;
+}
+
+.btns {
+  border-radius: 20px;
+  background: #eee;
+  display: inline-block;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
