@@ -1,0 +1,35 @@
+.dialog {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.banner {
+  width: 100%;
+  object-fit: cover;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.profile {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  object-fit: cover;
+  margin-top: -60px;
+  border: 7px solid white;
+}
+
+.text {
+  margin-top: 10px;
+  h4 {
+    margin: 5px 0;
+    color: black;
+  }
+  h3 {
+    margin-top: 15px;
+    color: black;
+  }
+  p {
+    padding: 20px;
+  }
+}
