@@ -1,3 +1,24 @@
 .bodytop {
   display: grid;
 }
+
+.ref {
+  font-size: 18px;
+  display: block;
+  font-weight: 600;
+  margin-top: 24px;
+  text-align: center;
+}
+
+.btn {
+  background: #e5571b;
+  border: 0;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  margin-top: 16px;
+  padding: 20px;
+  border-radius: 12px;
+}

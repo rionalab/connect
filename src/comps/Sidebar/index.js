@@ -8,6 +8,9 @@ function Sidebar() {
     <div>
       <Birthday />
       <Links />
+      <br />
+      <p className={style.ref}>Do you have any Refferal ?</p>
+      <button className={style.btn}>Click Here</button>
     </div>
   );
 }
