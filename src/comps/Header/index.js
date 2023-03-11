@@ -16,7 +16,9 @@ function Header() {
         <div className={style.left}>
           <img src="/images/logo.png" alt="Logo Bank BNI" />
           <div className={style.lefttext}>
-            <h4>Welcome, RM Rangers!</h4>
+            <h4>
+              Welcome, <b>RM Rangers!</b>
+            </h4>
             <p>Melayani Negeri, Kebanggaan Bangsa.</p>
           </div>
         </div>

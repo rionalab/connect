@@ -1,6 +1,7 @@
 .header {
   height: 100px;
   margin-bottom: 8px;
+  margin-top: 16px;
 }
 
 .content {
@@ -9,6 +10,20 @@
   align-items: center;
   margin: 10px 100px;
   font-weight: 600;
+}
+
+.lefttext {
+  h4 {
+    font-size: 18px;
+    b {
+      color: #2e9cb0 !important;
+    }
+  }
+  p {
+    color: #888 !important;
+    font-weight: 400;
+    font-size: 12px !important;
+  }
 }
 
 .left {
