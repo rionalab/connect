@@ -19,13 +19,13 @@ function Birthday() {
         <h3>Birthday</h3>
         <div className={style.people}>
           <div className={style.person} onClick={() => toggleModal("e")}>
-            <img src="/e.png" alt="person" />
+            <img src="/images/e.png" alt="person" />
           </div>
           <div className={style.person} onClick={() => toggleModal("f")}>
-            <img src="/f.png" alt="person" />
+            <img src="/images/f.png" alt="person" />
           </div>
           <div className={style.person} onClick={() => toggleModal("g")}>
-            <img src="/g.png" alt="person" />
+            <img src="/images/g.png" alt="person" />
           </div>
         </div>
       </div>

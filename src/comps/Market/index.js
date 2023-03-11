@@ -10,21 +10,21 @@ function Market() {
       <h3>Market Update</h3>
       <div className={style.market}>
         <div className={style.item}>
-          <img src={"/h.png"} alt="h" />
+          <img src={"/images/h.png"} alt="h" />
           <label>
             Morning Market
             <span>01 Jan 2023</span>
           </label>
         </div>
         <div className={style.item}>
-          <img src={"/i.png"} alt="i" />
+          <img src={"/images/i.png"} alt="i" />
           <label>
             Fixed Income Weekly
             <span>30 Jan 2023</span>
           </label>
         </div>
         <div className={style.item}>
-          <img src={"/j.png"} />
+          <img src={"/images/j.png"} />
           <label>
             Market Wrap <span>20-30 Jan 2023</span>
           </label>

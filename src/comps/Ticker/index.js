@@ -36,7 +36,7 @@ function Ticker() {
                   <tr key={tr2.name}>
                     <td>
                       <p>
-                        <img alt={tr2.name} src={`/${tr2.name}.jpg`} />
+                        <img alt={tr2.name} src={`/images/${tr2.name}.jpg`} />
                         {tr2.name}
                       </p>
                     </td>
@@ -49,6 +49,7 @@ function Ticker() {
           </table>
         </p>
       </Dialog>
+
       <div className={style.tickerContainer}>
         <button onClick={() => setVisible(true)} className={style.more}>
           More <i className="pi pi-angle-right"></i>
@@ -75,7 +76,10 @@ function Ticker() {
                       <div>
                         <div>{row2.name}</div>
                         <div>
-                          <img src={`/${row2.name}.jpg`} alt={row2.name} />
+                          <img
+                            src={`/images/${row2.name}.jpg`}
+                            alt={row2.name}
+                          />
                         </div>
                         <div>
                           <span>

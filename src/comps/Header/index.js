@@ -15,7 +15,7 @@ function Header() {
       <div className={style.content}>
         <p>{date}</p>
 
-        <img src="/logo.png" alt="Logo Bank BNI" />
+        <img src="/images/logo.png" alt="Logo Bank BNI" />
 
         <a href="https://bni.crmnextlab.com/devnetapp/login/login">Login</a>
       </div>

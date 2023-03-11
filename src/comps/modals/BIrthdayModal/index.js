@@ -14,12 +14,12 @@ function BirthdayModal(props) {
       <div className={style.content}>
         <img
           className={style.banner}
-          src="/birthday-banner.png"
+          src="/images/birthday-banner.png"
           alt="Birthday Banner"
         />
         <img
           className={style.profile}
-          src={"/" + img + ".png"}
+          src={"/images/" + img + ".png"}
           alt="Profile Pic"
         />
         <div className={style.text}>

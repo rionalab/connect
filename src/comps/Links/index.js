@@ -29,15 +29,15 @@ function Links() {
       <div className={style.links}>
         <div className={style.linksInner}>
           <a className={style.link} href="https://bniorangemagazine.com/">
-            <img src="/k.png" alt="k" />
+            <img src="images/k.png" alt="k" />
             <span>Orange Magazine</span>
           </a>
           <a className={style.link} onClick={() => setVisible(true)} href="#">
-            <img src="/l.png" alt="l" />
+            <img src="images/l.png" alt="l" />
             <span>Booklet PPA</span>
           </a>
           <a className={style.link} href="https://www.bni.co.id/id-id/">
-            <img src="/m.png" amlt="m" />
+            <img src="images/m.png" amlt="m" />
             <span>bni.co.id</span>
           </a>
         </div>
