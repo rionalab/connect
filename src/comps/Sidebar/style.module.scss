@@ -2,16 +2,9 @@
   display: grid;
 }
 
-.ref {
-  font-size: 18px;
-  display: block;
-  font-weight: 600;
-  margin-top: 24px;
-  text-align: center;
-}
-
 .btn {
   background: #e5571b;
+  text-decoration: none;
   border: 0;
   color: white;
   font-weight: 600;
@@ -26,20 +19,31 @@
   cursor: pointer;
 
   img {
-    height: 20px;
+    height: 30px;
     padding: 0px 10px;
-    padding-bottom: 2px;
+    padding-bottom: 5px;
   }
   &:hover {
-    background-color: #006181;
+    background: #cd4e18;
   }
 }
 .sidebar {
-  h3 {
-    text-align: center;
-    border-radius: 3px;
-    background-color: #f4f4f4;
-    padding: 8px;
-    margin-bottom: 16px;
+  // h3 {
+  //   text-align: center;
+  //   border-radius: 3px;
+  //   background-color: #f4f4f4;
+  //   padding: 8px;
+  //   margin-bottom: 16px;
+  // }
+}
+
+.referral {
+  // height: 100%;
+  display: block;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f7e6ae;
+  p {
+    font-size: 14px;
   }
 }

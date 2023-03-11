@@ -13,11 +13,18 @@ function Header() {
   return (
     <div className={style.header}>
       <div className={style.content}>
-        <p>{date}</p>
+        <div className={style.left}>
+          <img src="/images/logo.png" alt="Logo Bank BNI" />
+          <div className={style.lefttext}>
+            <h4>Welcome, RM Rangers!</h4>
+            <p>Melayani Negeri, Kebanggaan Bangsa.</p>
+          </div>
+        </div>
 
-        <img src="/images/logo.png" alt="Logo Bank BNI" />
-
-        <a href="https://bni.crmnextlab.com/devnetapp/login/login">Login</a>
+        <div className={style.right}>
+          <a href="https://bni.crmnextlab.com/devnetapp/login/login">Login</a>
+          <p>{date}</p>
+        </div>
       </div>
     </div>
   );

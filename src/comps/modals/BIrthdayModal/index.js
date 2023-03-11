@@ -19,7 +19,7 @@ function BirthdayModal(props) {
         />
         <img
           className={style.profile}
-          src={"/images/" + img + ".png"}
+          src={"/images/" + img + ".jpg"}
           alt="Profile Pic"
         />
         <div className={style.text}>

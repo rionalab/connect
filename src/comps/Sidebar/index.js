@@ -9,14 +9,18 @@ function Sidebar() {
       <Birthday />
       <Links />
       <br />
-      <p className={style.ref}>Do you have any Referral ?</p>
-      <button
-        className={style.btn}
-        href="https://bni.crmnextlab.com/bnirestapi/home/referral"
-      >
-        <img src="/images/voucher.png" alt="voucher" />
-        Click Here
-      </button>
+      <div className={style.referral}>
+        <h3>Refer and earn</h3>
+        <h5>Share your referral code and earn your rewards!</h5>
+        <p>Do you have any Referral ?</p>
+        <a
+          className={style.btn}
+          href="https://bni.crmnextlab.com/bnirestapi/home/referral"
+        >
+          <img src="/images/voucher.png" alt="voucher" />
+          Click Here
+        </a>
+      </div>
     </div>
   );
 }
