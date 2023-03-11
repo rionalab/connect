@@ -8,6 +8,43 @@
   margin-top: 16px;
 }
 
+.tbl {
+  width: 100%;
+  border: 1px solid #ddd;
+  th {
+    padding: 16px 8px;
+    background: #f4f4f4;
+  }
+  tbody {
+    tr {
+      &:nth-child(even) {
+        td {
+          background: #fafafa;
+        }
+      }
+    }
+  }
+  td {
+    padding: 4px 8px;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+    p {
+      display: flex;
+      font-weight: 600;
+      color: #2e9cb0;
+      font-family: "Poppins", sans-serif;
+
+      align-items: center;
+      img {
+        width: 35px;
+        height: 35px;
+        margin-right: 4px;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
 .tickerItems {
   text-align: center;
   margin-bottom: 16px;
@@ -15,6 +52,15 @@
 
 .tickerContainer {
   position: relative;
+}
+
+.title {
+  position: absolute;
+  color: white;
+  font-size: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
 }
 
 .more {

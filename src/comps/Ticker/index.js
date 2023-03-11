@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import NewsTicker from "react-advanced-news-ticker";
 import style from "./style.module.scss";
 import dataKurs from "data/kurs.json";
@@ -7,29 +7,54 @@ import { Dialog } from "primereact/dialog";
 function Ticker() {
   const { data } = dataKurs;
   const [visible, setVisible] = useState(false);
+  const [row, setRow] = useState([]);
+
+  useEffect(() => {
+    setRow(dataKurs.data.map((row) => row.counter.map((row2) => row2)));
+  }, []);
 
   return (
     <>
       <Dialog
-        header="Header"
+        header="Kurs"
         visible={visible}
-        style={{ width: "50vw" }}
+        style={{ width: "544px" }}
         onHide={() => setVisible(false)}
       >
         <p className="m-0">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          <table cellSpacing={0} className={style.tbl}>
+            <thead>
+              <tr>
+                <th align="left">Mata Uang</th>
+                <th align="right">Beli</th>
+                <th align="right">Jual</th>
+              </tr>
+            </thead>
+            <tbody>
+              {row.map((tr) =>
+                tr.map((tr2) => (
+                  <tr key={tr2.name}>
+                    <td>
+                      <p>
+                        <img alt={tr2.name} src={`/${tr2.name}.jpg`} />
+                        {tr2.name}
+                      </p>
+                    </td>
+                    <td align="right">{tr2.beli}</td>
+                    <td align="right">{tr2.jual}</td>
+                  </tr>
+                ))
+              )}
+            </tbody>
+          </table>
         </p>
       </Dialog>
       <div className={style.tickerContainer}>
         <button onClick={() => setVisible(true)} className={style.more}>
           More <i className="pi pi-angle-right"></i>
         </button>
+
+        <h3 className={style.title}>KURS</h3>
 
         <NewsTicker
           rowHeight={48}

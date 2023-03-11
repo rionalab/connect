@@ -16,7 +16,7 @@ function Birthday() {
       <BirthdayModal img={img} visible={showModal} toggleModal={setShowModal} />
 
       <div className={style.bday}>
-        <img src={`/d.png`} alt="bg" className={style.bg} />
+        <h3>Birthday</h3>
         <div className={style.people}>
           <div className={style.person} onClick={() => toggleModal("e")}>
             <img src="/e.png" alt="person" />

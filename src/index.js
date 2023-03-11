@@ -7,6 +7,7 @@ import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import "./index.scss";
+import Footer from "comps/Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -24,5 +25,6 @@ const router = createBrowserRouter([
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
+    <Footer />
   </React.StrictMode>
 );

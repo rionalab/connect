@@ -1,10 +1,8 @@
 .bday {
-  display: grid;
   column-gap: 24px;
   margin-top: 20px;
-  position: relative;
-  height: 170px;
-  grid-template-columns: 1fr 450px;
+  h3 {
+  }
 }
 
 .bg {
@@ -15,23 +13,20 @@
 }
 
 .people {
-  position: absolute;
   width: 100%;
-  z-index: 111;
-  top: 50px;
-  text-align: right;
+  text-align: center;
 }
 
 .morebday {
   color: #333;
   margin: 0 auto;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 12px;
   text-decoration: none;
   text-align: center;
   width: 100%;
   display: inline-block;
-  margin-top: -60px !important;
+  margin-top: 12px !important;
   b {
     color: #ff5721;
     font-weight: 600;

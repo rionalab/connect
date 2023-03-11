@@ -5,7 +5,7 @@ import style from "./style.module.scss";
 
 function Sidebar() {
   return (
-    <div>
+    <div className={style.sidebar}>
       <Birthday />
       <Links />
       <br />
