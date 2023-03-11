@@ -14,7 +14,7 @@ function Sidebar() {
         className={style.btn}
         href="https://bni.crmnextlab.com/bnirestapi/home/referral"
       >
-        <img src="voucher.png" />
+        <img src="voucher.png" alt="voucher" />
         Click Here
       </button>
     </div>

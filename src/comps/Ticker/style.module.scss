@@ -13,6 +13,33 @@
   margin-bottom: 16px;
 }
 
+.tickerContainer {
+  position: relative;
+}
+
+.more {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba($color: #000000, $alpha: 0.1);
+  border-top-right-radius: 111px;
+  border-bottom-right-radius: 111px;
+  height: 45px;
+  width: 80px;
+  border: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background: rgba($color: #000000, $alpha: 0.2);
+  }
+}
+
 .tickerItem {
   //   display: grid;
   display: inline-block;

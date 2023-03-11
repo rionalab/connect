@@ -4,29 +4,32 @@ import BirthdayModal from "comps/modals/BIrthdayModal";
 
 function Birthday() {
   const [showModal, setShowModal] = useState(false);
-  const toggleModal = () => {
+  const [img, setImg] = useState("e");
+
+  const toggleModal = (img) => {
     setShowModal(!showModal);
+    setImg(img);
   };
 
   return (
     <>
-      <BirthdayModal visible={showModal} toggleModal={toggleModal} />
+      <BirthdayModal img={img} visible={showModal} toggleModal={setShowModal} />
 
       <div className={style.bday}>
-        <img src={`/d.png`} className={style.bg} />
+        <img src={`/d.png`} alt="bg" className={style.bg} />
         <div className={style.people}>
-          <div className={style.person} onClick={toggleModal}>
-            <img src="/e.png" />
+          <div className={style.person} onClick={() => toggleModal("e")}>
+            <img src="/e.png" alt="person" />
           </div>
-          <div className={style.person}>
-            <img src="/f.png" />
+          <div className={style.person} onClick={() => toggleModal("f")}>
+            <img src="/f.png" alt="person" />
           </div>
-          <div className={style.person}>
-            <img src="/g.png" />
+          <div className={style.person} onClick={() => toggleModal("g")}>
+            <img src="/g.png" alt="person" />
           </div>
         </div>
       </div>
-      <a className={style.morebday} href="#">
+      <a className={style.morebday} href="/">
         <b>Check</b> who else have birthday this <br />
         month and wish a wonderful happy birthday
       </a>
