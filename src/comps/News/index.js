@@ -6,11 +6,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import style from "./style.module.scss";
 
-const cities = [
-  { name: "Telekomunikasi", code: "NY" },
-  { name: "Bisnis", code: "RM" },
-];
-
 var settings = {
   infinite: true,
   speed: 500,
@@ -61,7 +56,7 @@ function News() {
         {data.data.map((row, i) => {
           return (
             <div key={i} className={style.sliderItem}>
-              <img src={row.image} />
+              <img src={row.image} alt="img" />
               {/* <div className={style.label}>{row.title}</div> */}
             </div>
           );

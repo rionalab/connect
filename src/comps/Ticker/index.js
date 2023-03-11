@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import NewsTicker from "react-advanced-news-ticker";
 import style from "./style.module.scss";
 import dataKurs from "data/kurs.json";
 import { Dialog } from "primereact/dialog";
+import Marquee from "react-fast-marquee";
 
 function Ticker() {
   const { data } = dataKurs;
@@ -16,7 +16,7 @@ function Ticker() {
   return (
     <>
       <Dialog
-        header="Kurs"
+        header="Kurs TT Counter"
         visible={visible}
         style={{ width: "544px" }}
         onHide={() => setVisible(false)}
@@ -55,53 +55,51 @@ function Ticker() {
           More <i className="pi pi-angle-right"></i>
         </button>
 
-        <h3 className={style.title}>KURS</h3>
+        <h3 title="Last update at 22/03/2023" className={style.title}>
+          Kurs TT Counter [22/03]
+        </h3>
 
-        <NewsTicker
-          rowHeight={48}
-          maxRows={1}
-          speed={400}
-          duration={4000}
-          autoStart={true}
-          pauseOnHover={true}
-          id="myId"
-          className={style.ticker}
-        >
-          {data.map((row, i) => {
-            return (
-              <div key={i} className={style.tickerItems}>
-                {row.counter.map((row2, i) => {
-                  return (
-                    <div className={style.tickerItem} key={row2.name}>
-                      <div>
-                        <div>{row2.name}</div>
-                        <div>
-                          <img
-                            src={`/images/${row2.name}.jpg`}
-                            alt={row2.name}
-                          />
+        {true && (
+          <div className={style.marquee}>
+            <Marquee speed={120} gradient={false} pauseOnHover={true}>
+              {data.map((row, i) => {
+                return (
+                  <div key={i} className={style.tickerItems}>
+                    {row.counter.map((row2, i) => {
+                      return (
+                        <div className={style.tickerItem} key={row2.name}>
+                          <div>
+                            <div>{row2.name}</div>
+                            <div>
+                              <img
+                                src={`/images/${row2.name}.jpg`}
+                                alt={row2.name}
+                              />
+                            </div>
+                            <div>
+                              <span className={style.sell}>
+                                <span>Sell</span>
+                                <br />
+                                {row2.jual.split(",")[0]}
+                              </span>
+                            </div>
+                            <div>
+                              <span className={style.buy}>
+                                <span>Buy</span>
+                                <br />
+                                {row2.beli.split(",")[0]}
+                              </span>
+                            </div>
+                          </div>
                         </div>
-                        <div>
-                          <span>
-                            Sell <br />
-                            {row2.jual.split(",")[0]}
-                          </span>
-                        </div>
-                        <div>
-                          <span>
-                            Buy
-                            <br />
-                            {row2.beli.split(",")[0]}
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            );
-          })}
-        </NewsTicker>
+                      );
+                    })}
+                  </div>
+                );
+              })}
+            </Marquee>
+          </div>
+        )}
       </div>
     </>
   );
