@@ -32,6 +32,40 @@
   }
 }
 
+.slick-prev,
+.slick-next {
+  &::before {
+    font-size: 44px !important;
+  }
+}
+
+.slick-next {
+  right: 45px !important;
+}
+
+.slick-dots {
+  bottom: -20px !important;
+  li {
+    background: #eee;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    button {
+      &::before {
+        color: #eee;
+      }
+    }
+    &.slick-active {
+      background: #e5571b;
+      button {
+        &::before {
+          color: transparent;
+        }
+      }
+    }
+  }
+}
+
 @keyframes anim {
   from {
     opacity: 0;

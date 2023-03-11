@@ -54,12 +54,13 @@ function Birthday() {
             <img src="/images/profile5.jpg" alt="person" />
           </div>
         </div>
+
+        <a className={style.morebday}>
+          <b onClick={() => setShowNotif(true)}>Check</b> who else have birthday
+          this <br />
+          month and wish a wonderful happy birthday
+        </a>
       </div>
-      <a className={style.morebday}>
-        <b onClick={() => setShowNotif(true)}>Check</b> who else have birthday
-        this <br />
-        month and wish a wonderful happy birthday
-      </a>
     </>
   );
 }

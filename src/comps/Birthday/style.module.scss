@@ -1,12 +1,15 @@
 .bday {
+  border: 1px solid #eee;
+  border-radius: 20px;
   column-gap: 24px;
   margin-top: 20px;
+  padding: 16px 0 24px;
   h3 {
     text-align: center;
     border-radius: 5px;
-    background-color: #f4f4f4;
+    // background-color: #f4f4f4;
     padding: 8px;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
   }
 }
 
@@ -31,7 +34,7 @@
   text-align: center;
   width: 100%;
   display: inline-block;
-  margin-top: 12px !important;
+  margin-top: 16px !important;
   b {
     cursor: pointer;
     color: #ff5721;
@@ -41,14 +44,14 @@
 
 .person {
   cursor: pointer;
-  width: 69px;
-  height: 69px;
+  width: 59px;
+  height: 59px;
   display: inline-block;
-  margin: 0 4px;
+  margin: 0 8px;
   border-radius: 50%;
   overflow: hidden;
   border: 5px solid white;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease-out;
   img {
     width: 100%;
