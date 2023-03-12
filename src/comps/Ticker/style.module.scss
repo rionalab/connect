@@ -1,8 +1,8 @@
 .tickerContainer {
   position: relative;
   width: 100%;
-  background-color: rgb(0, 47, 48);
-  // background: #2e9cb0;
+  // background-color: rgb(0, 47, 48);
+  background: #2e9cb0;
 
   height: 45px !important;
   border-radius: 111px;
@@ -31,14 +31,14 @@
 
 .sell {
   span {
-    color: #ff6e6e;
+    color: #a02424;
     font-weight: 600;
   }
 }
 
 .buy {
   span {
-    color: #71e271;
+    color: #1b591b;
     font-weight: 600;
   }
 }
@@ -56,6 +56,15 @@
         td {
           background: #fafafa;
         }
+      }
+    }
+  }
+  tfoot {
+    tr {
+      td {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: 500;
       }
     }
   }

@@ -46,6 +46,13 @@ function Ticker() {
                 ))
               )}
             </tbody>
+            <tfoot>
+              <tr>
+                <td colSpan={3}>
+                  *Pemberitahuan Terakhir: 22-03-2023 14:20 WIB (GMT+07:00)
+                </td>
+              </tr>
+            </tfoot>
           </table>
         </p>
       </Dialog>
@@ -61,7 +68,7 @@ function Ticker() {
 
         {true && (
           <div className={style.marquee}>
-            <Marquee speed={120} gradient={false} pauseOnHover={true}>
+            <Marquee speed={50} gradient={false} pauseOnHover={true}>
               {data.map((row, i) => {
                 return (
                   <div key={i} className={style.tickerItems}>

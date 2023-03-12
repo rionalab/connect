@@ -4,6 +4,7 @@ import BodyTop from "comps/BodyTop";
 import React from "react";
 import style from "./style.module.scss";
 import XMLParser from "react-xml-parser";
+import Footer from "comps/Footer";
 
 function Homepage() {
   const getFeed = async () => {
@@ -25,6 +26,7 @@ function Homepage() {
       <Header />
       <Ticker />
       <BodyTop />
+      <Footer />
     </div>
   );
 }

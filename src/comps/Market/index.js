@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import style from "./style.module.scss";
 import { Dialog } from "primereact/dialog";
 import dataMarket from "data/market.json";
@@ -6,7 +6,6 @@ import dataMarket from "data/market.json";
 function Market() {
   const [visible, setVisible] = useState(false);
   const [data, setData] = useState({ row: [], title: "" });
-  const [json, setJson] = useState([]);
 
   const setModal = (props) => {
     const { row, title } = props;
@@ -44,18 +43,23 @@ function Market() {
                 <th align="left">No</th>
                 <th align="right">File Name</th>
                 <th align="right">Date</th>
-                <th align="right">View/Download</th>
+                <th align="right">Download</th>
               </tr>
             </thead>
             <tbody>
               {data.row.map((tr, id) => (
                 <tr key={id}>
                   <td>{tr.no}</td>
-                  <td align="right">{tr.file_name}</td>
+                  <td align="right">
+                    <a>
+                      <i className="pi pi-external-link" />
+                      {tr.file_name}
+                    </a>
+                  </td>
                   <td align="right">{tr.date}</td>
                   <td align="right">
                     <button onClick={() => onButtonDownload(tr.url)}>
-                      <i className="pi pi-download"></i> Download
+                      <i className="pi pi-download" /> Download
                     </button>
                   </td>
                 </tr>
@@ -67,6 +71,7 @@ function Market() {
 
       <br />
       <br />
+      {/* <br /> */}
 
       <h3>Market Update</h3>
       <div className={style.market}>

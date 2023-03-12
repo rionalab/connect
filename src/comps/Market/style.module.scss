@@ -22,13 +22,14 @@
   border: 1px solid #eee;
   padding: 24px 0;
   grid-template-columns: 75px 1fr;
+  background: #c7e0e7;
   &:hover {
     transform: translateY(-5px);
     border: 1px solid #ddd;
     transition: all 0.5s;
   }
   button {
-    color: #2e9cb0;
+    color: #026884;
     border: 0;
     font-family: "Poppins", sans-serif;
     background: transparent;
@@ -60,7 +61,7 @@
       display: block;
       font-size: 11px;
       font-weight: 500;
-      color: #aaa;
+      color: #026884;
     }
   }
   img {
@@ -95,6 +96,17 @@
     padding: 4px 8px;
     font-size: 16px;
     border-bottom: 1px solid #eee;
+    i {
+      padding-right: 10px;
+    }
+    a {
+      text-decoration: underline;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    a:hover {
+      color: #cd4e18;
+    }
     p {
       display: flex;
       font-weight: 600;

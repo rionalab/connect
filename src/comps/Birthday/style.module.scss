@@ -1,13 +1,13 @@
 .bday {
   border: 1px solid #eee;
-  border-radius: 20px;
+  border-radius: 5px;
   column-gap: 24px;
   margin-top: 20px;
-  padding: 16px 0 24px;
+  // padding: 16px 0 24px;
   h3 {
     text-align: center;
-    border-radius: 5px;
-    // background-color: #f4f4f4;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #ffbf85;
     padding: 8px;
     margin-bottom: 10px;
   }
@@ -29,13 +29,13 @@
   color: #333;
   margin: 0 auto;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
   text-decoration: none;
   text-align: center;
   width: 100%;
   font-family: "Poppins", sans-serif;
   display: inline-block;
-  margin-top: 16px !important;
+  margin: 16px 0px !important;
   span {
     cursor: pointer;
     color: #ff5721;

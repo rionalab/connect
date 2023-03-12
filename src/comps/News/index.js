@@ -80,7 +80,7 @@ function News() {
             return (
               <div key={i} className={style.sliderItem}>
                 <img src={row.image} alt="img" />
-                {/* <div className={style.label}>{row.title}</div> */}
+                <div className={style.label}>{row.title}</div>
               </div>
             );
           })}
@@ -91,7 +91,7 @@ function News() {
 
         <Market />
 
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );

@@ -24,7 +24,9 @@ function Header() {
         </div>
 
         <div className={style.right}>
-          <a href="https://bni.crmnextlab.com/devnetapp/login/login">Login</a>
+          <a href="https://bni.crmnextlab.com/devnetapp/login/login">
+            <i className="pi pi-sign-in"></i>Login
+          </a>
           <p>{date}</p>
         </div>
       </div>

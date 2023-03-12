@@ -11,7 +11,7 @@ function Sidebar() {
       <br />
       <div className={style.referral}>
         <h3>Refer and earn</h3>
-        <h5>Share your referral code and earn your rewards!</h5>
+        <h5>Share & Connect your reference to BNI, and earn your rewards!</h5>
         <p>Do you have any Referral ?</p>
         <a
           className={style.btn}
