@@ -70,3 +70,56 @@
     border-radius: 4px;
   }
 }
+
+.tbl {
+  width: 100%;
+  border: 1px solid #ddd;
+
+  th {
+    padding: 16px 8px;
+    background: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  tbody {
+    tr {
+      &:nth-child(even) {
+        td {
+          background: #fafafa;
+        }
+      }
+    }
+  }
+  td {
+    text-align: left;
+    padding: 4px 8px;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+    p {
+      display: flex;
+      font-weight: 600;
+      color: #2e9cb0;
+      font-family: "Poppins", sans-serif;
+      align-items: center;
+    }
+    button {
+      text-decoration: none;
+      margin-top: 10px;
+      width: 100%;
+      height: 40px;
+      border: 0;
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      color: #ffff;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-bottom: 8px;
+      overflow: hidden;
+      background: #e5571b;
+      transition: 0.3s;
+      &:hover {
+        background: #cd4e18;
+      }
+    }
+  }
+}

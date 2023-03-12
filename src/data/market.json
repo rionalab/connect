@@ -1,0 +1,19 @@
+{
+    "data": [
+        {
+            "morning_market": [
+                {"no": "1", "file_name": "Morning View Info", "date": "11 Jun 2023", "url": "/morning-view.pdf"}
+            ]
+        },
+        {
+            "fixed_income": [
+                {"no": "1", "file_name": "Fixed Income Info", "date": "05 Mar 2023", "url": "/fixed-income.pptx"}
+            ]
+        },
+        {
+            "market_wrap": [
+                {"no": "1", "file_name": "Market Wrap Info", "date": "20-30 Jan 2023", "url": "/market-wrap.pptx"}
+            ]
+        }
+    ]
+}
