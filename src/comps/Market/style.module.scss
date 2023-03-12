@@ -18,14 +18,13 @@
 .item {
   border-radius: 4px;
   display: grid;
-  border-bottom: 10px solid #ddd;
   transition: all 0.9s;
   border: 1px solid #eee;
-  // height: 140px;
   padding: 24px 0;
   grid-template-columns: 75px 1fr;
   &:hover {
     transform: translateY(-5px);
+    border: 1px solid #ddd;
     transition: all 0.5s;
   }
   button {
