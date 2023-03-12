@@ -82,3 +82,24 @@
   display: inline-block;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
 }
+
+.dialog {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.banner {
+  width: 40%;
+  object-fit: cover;
+  margin: 50px 50px 0px 50px;
+}
+
+.text {
+  font-family: "Poppins", sans-serif;
+  margin: 10px;
+  h4 {
+    margin: 20px 50px;
+    color: black;
+    font-size: 14px;
+  }
+}
