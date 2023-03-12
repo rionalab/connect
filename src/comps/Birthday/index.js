@@ -55,11 +55,11 @@ function Birthday() {
           </div>
         </div>
 
-        <a className={style.morebday}>
-          <b onClick={() => setShowNotif(true)}>Check</b> who else have birthday
-          this <br />
+        <p className={style.morebday}>
+          <span onClick={() => setShowNotif(true)}>Check</span> who else have
+          birthday this <br />
           month and wish a wonderful happy birthday
-        </a>
+        </p>
       </div>
     </>
   );
