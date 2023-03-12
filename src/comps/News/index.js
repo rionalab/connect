@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import style from "./style.module.scss";
+import Footer from "comps/Footer";
 
 var settings = {
   infinite: true,
@@ -63,11 +64,13 @@ function News() {
           );
         })}
       </Slider>
-      <a href="#" className={style.more}>
+      <a href="/" className={style.more}>
         Show more from {btn}
       </a>
 
       <Market />
+
+      <Footer />
     </div>
   );
 }

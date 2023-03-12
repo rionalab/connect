@@ -28,16 +28,24 @@ function Links() {
 
       <div className={style.links}>
         <div className={style.linksInner}>
-          <a className={style.link} href="https://bniorangemagazine.com/">
+          <a
+            target={`_blank`}
+            className={style.link}
+            href="https://bniorangemagazine.com/"
+          >
             <img src="images/newspaper.png" alt="k" />
             <span>Orange Magazine</span>
           </a>
-          <a className={style.link} onClick={() => setVisible(true)} href="#">
+          <button className={style.link} onClick={() => setVisible(true)}>
             <img src="images/catalog.png" alt="l" />
             <span>Booklet PPA</span>
-          </a>
-          <a className={style.link} href="https://www.bni.co.id/id-id/">
-            <img src="images/bni-46.png" amlt="Logo BNI 46" />
+          </button>
+          <a
+            target={`_blank`}
+            className={style.link}
+            href="https://www.bni.co.id/id-id/"
+          >
+            <img src="images/bni-46.png" alt="Logo BNI 46" />
             <span>bni.co.id</span>
           </a>
         </div>
