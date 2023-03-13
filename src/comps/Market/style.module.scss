@@ -1,7 +1,7 @@
 .market {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 24px;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
   margin-top: 16px;
   font-size: 16px;
   margin-bottom: 32px;
@@ -16,11 +16,12 @@
 }
 
 .item {
-  border-radius: 4px;
+  border-radius: 20px;
   display: grid;
   transition: all 0.9s;
   border: 1px solid #eee;
-  padding: 24px 0;
+  padding: 10px 0;
+  height: 129px;
   grid-template-columns: 75px 1fr;
   background: #c7e0e7;
   &:hover {
@@ -45,10 +46,11 @@
   }
   label {
     font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    font-weight: 800;
     display: inline-block;
-    font-size: 16px;
+    font-size: 18px;
     margin-left: 16px;
+    padding-top: 25px;
     cursor: pointer;
     color: #333;
     display: inline-block;
@@ -124,7 +126,7 @@
       font-weight: 600;
       color: #ffff;
       cursor: pointer;
-      border-radius: 5px;
+      border-radius: 10px;
       margin-bottom: 8px;
       overflow: hidden;
       background: #e5571b;

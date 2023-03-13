@@ -1,16 +1,32 @@
 {
-  "data": [
-    {
-      "image": "images/a.png",
-      "title": "Kredit Korporasi Semakin Positif, Ini Sektor yang Dibidik BNI (BBNI)"
-    },
-    {
-      "image": "images/b.png",
-      "title": "Lampaui Batasan, UMKM Binaan BNI Lompat Lebih Tinggi di Ajang Inacraft 2023"
-    },
-    {
-      "image": "images/c.png",
-      "title": "Sambut Delegasi Afrika Selatan, BNI Siap Jajaki Potensi Bisnis"
-    }
-  ]
+  "data": {
+    "industry": [
+      {
+        "image": "images/news-1.jpg",
+        "title": "Kredit Korporasi Semakin Positif, Ini Sektor yang Dibidik BNI (BBNI)"
+      },
+      {
+        "image": "images/news-2.jpg",
+        "title": "Lampaui Batasan, UMKM Binaan BNI Lompat Lebih Tinggi di Ajang Inacraft 2023"
+      },
+      {
+        "image": "images/news-3.jpg",
+        "title": "Sambut Delegasi Afrika Selatan, BNI Siap Jajaki Potensi Bisnis"
+      }
+    ],
+    "BNI": [
+      {
+        "image": "images/a.png",
+        "title": "Kredit Korporasi Semakin Positif, Ini Sektor yang Dibidik BNI (BBNI)"
+      },
+      {
+        "image": "images/b.png",
+        "title": "Lampaui Batasan, UMKM Binaan BNI Lompat Lebih Tinggi di Ajang Inacraft 2023"
+      },
+      {
+        "image": "images/c.png",
+        "title": "Sambut Delegasi Afrika Selatan, BNI Siap Jajaki Potensi Bisnis"
+      }
+    ]
+  }
 }

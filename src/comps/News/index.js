@@ -20,6 +20,7 @@ var settings = {
 function News() {
   const [btn, setBtn] = useState("industry");
   const [showNotif, setShowNotif] = useState(false);
+  // const [data, setData] = useState(dataNews.data.industry);
 
   const handleClick = (idx) => {
     setBtn(idx);
@@ -76,11 +77,21 @@ function News() {
         </div>
 
         <Slider {...settings}>
-          {data.data.map((row, i) => {
+          {data.data[`${btn}`].map((row, i) => {
             return (
-              <div key={i} className={style.sliderItem}>
-                <img src={row.image} alt="img" />
-                <div className={style.label}>{row.title}</div>
+              <div className={style.sliderItem}>
+                <a
+                  href="https://bit.ly/BNI-SR018"
+                  key={i}
+                  // className={style.sliderItem}
+                >
+                  {/* <img
+                    src="/Portals/1/DNNGalleryPro/uploads/2022/12/30/Kebijakan_dari_BI_terkait_Biaya_Keterlambatan_dan_Min_Pembayaran.jpg"
+                    alt="img"
+                  /> */}
+                  <img src={row.image} alt="img" />
+                  <div className={style.label}>{row.title}</div>
+                </a>
               </div>
             );
           })}

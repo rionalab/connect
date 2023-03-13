@@ -3,7 +3,7 @@ import { Dialog } from "primereact/dialog";
 import style from "./style.module.scss";
 
 function BirthdayModal(props) {
-  const { visible, toggleModal, img } = props;
+  const { visible, toggleModal, img, name } = props;
   return (
     <Dialog
       visible={visible}
@@ -24,7 +24,7 @@ function BirthdayModal(props) {
         />
         <div className={style.text}>
           <h4>Happy Birthday!</h4>
-          <h3>Rini Suherman</h3>
+          <h3>{name}</h3>
           <p>
             "Another adventure filled year awaits you. Welcome it by celebrating
             your birthday with pomp and splendor. Wishing you a very happy and

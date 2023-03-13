@@ -6,16 +6,24 @@ import { Dialog } from "primereact/dialog";
 function Birthday() {
   const [showModal, setShowModal] = useState(false);
   const [showNotif, setShowNotif] = useState(false);
-  const [img, setImg] = useState("profile1");
+  const [profile, setProfile] = useState({
+    img: "profile1",
+    name: "Anggun Nadia Siger",
+  });
 
-  const toggleModal = (img) => {
+  const toggleModal = (props) => {
     setShowModal(!showModal);
-    setImg(img);
+    setProfile(props);
   };
 
   return (
     <>
-      <BirthdayModal img={img} visible={showModal} toggleModal={setShowModal} />
+      <BirthdayModal
+        img={profile.img}
+        name={profile.name}
+        visible={showModal}
+        toggleModal={setShowModal}
+      />
 
       <Dialog
         visible={showNotif}
@@ -38,19 +46,59 @@ function Birthday() {
       <div className={style.bday}>
         <h3>Birthday</h3>
         <div className={style.people}>
-          <div className={style.person} onClick={() => toggleModal("profile1")}>
+          <div
+            className={style.person}
+            onClick={() =>
+              toggleModal({
+                img: "profile1",
+                name: "Anggun Nadia Siger",
+              })
+            }
+          >
             <img src="/images/profile1.jpg" alt="person" />
           </div>
-          <div className={style.person} onClick={() => toggleModal("profile2")}>
+          <div
+            className={style.person}
+            onClick={() =>
+              toggleModal({
+                img: "profile2",
+                name: "Helmy Fandianto",
+              })
+            }
+          >
             <img src="/images/profile2.jpg" alt="person" />
           </div>
-          <div className={style.person} onClick={() => toggleModal("profile3")}>
+          <div
+            className={style.person}
+            onClick={() =>
+              toggleModal({
+                img: "profile3",
+                name: "Yuli Irma Meliza",
+              })
+            }
+          >
             <img src="/images/profile3.jpg" alt="person" />
           </div>
-          <div className={style.person} onClick={() => toggleModal("profile4")}>
+          <div
+            className={style.person}
+            onClick={() =>
+              toggleModal({
+                img: "profile4",
+                name: "Muchamad Alvin Maulana",
+              })
+            }
+          >
             <img src="/images/profile4.jpg" alt="person" />
           </div>
-          <div className={style.person} onClick={() => toggleModal("profile5")}>
+          <div
+            className={style.person}
+            onClick={() =>
+              toggleModal({
+                img: "profile5",
+                name: "Verra Verbiyana",
+              })
+            }
+          >
             <img src="/images/profile5.jpg" alt="person" />
           </div>
         </div>

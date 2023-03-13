@@ -79,10 +79,10 @@ function Market() {
           <img src={"/images/stock.png"} alt="h" />
           <div>
             <label>
-              <span>11 Jun 2023</span>
+              {/* <span>11 Jun 2023</span> */}
               Morning Market
             </label>
-            <button
+            {/* <button
               onClick={() =>
                 setModal({
                   row: dataMarket.data[0].morning_market,
@@ -91,17 +91,17 @@ function Market() {
               }
             >
               Show more
-            </button>
+            </button> */}
           </div>
         </div>
         <div className={style.item}>
           <img src={"/images/stock-market.png"} alt="i" />
           <div>
             <label>
-              <span>05 Mar 2023</span>
+              {/* <span>05 Mar 2023</span> */}
               Fixed Income Weekly
             </label>
-            <button
+            {/* <button
               onClick={() =>
                 setModal({
                   row: dataMarket.data[1].fixed_income,
@@ -110,17 +110,17 @@ function Market() {
               }
             >
               Show more
-            </button>
+            </button> */}
           </div>
         </div>
         <div className={style.item}>
           <img alt="a" src={"/images/market-trends.png"} />
           <div>
             <label>
-              <span>20-30 Jan 2023</span>
+              {/* <span>20-30 Jan 2023</span> */}
               Market Wrap
             </label>
-            <button
+            {/* <button
               onClick={() =>
                 setModal({
                   row: dataMarket.data[2].market_wrap,
@@ -129,7 +129,26 @@ function Market() {
               }
             >
               Show more
-            </button>
+            </button> */}
+          </div>
+        </div>
+        <div className={style.item}>
+          <img src={"/images/stock-market.png"} alt="i" />
+          <div>
+            <label>
+              {/* <span>05 Mar 2023</span> */}
+              Monthly Update
+            </label>
+            {/* <button
+              onClick={() =>
+                setModal({
+                  row: dataMarket.data[1].fixed_income,
+                  title: "Fixed Income Weekly",
+                })
+              }
+            >
+              Show more
+            </button> */}
           </div>
         </div>
       </div>

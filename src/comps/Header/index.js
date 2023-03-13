@@ -14,13 +14,15 @@ function Header() {
     <div className={style.header}>
       <div className={style.content}>
         <div className={style.left}>
-          <img src="/images/logo.png" alt="Logo Bank BNI" />
           <div className={style.lefttext}>
             <h4>
-              Welcome, <b>RM Rangers!</b>
+              Welcome, <b>BNI Hi-Movers!</b>
             </h4>
-            <p>Melayani Negeri, Kebanggaan Bangsa.</p>
           </div>
+        </div>
+
+        <div className={style.center}>
+          <img src="/images/logo.png" alt="Logo Bank BNI" />
         </div>
 
         <div className={style.right}>

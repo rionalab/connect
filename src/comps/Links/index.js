@@ -31,6 +31,14 @@ function Links() {
           <a
             target={`_blank`}
             className={style.link}
+            href="https://www.bni.co.id/id-id/"
+          >
+            <img src="images/bni-46.png" alt="Logo BNI 46" />
+            <span>bni.co.id</span>
+          </a>
+          <a
+            target={`_blank`}
+            className={style.link}
             href="https://bniorangemagazine.com/"
           >
             <img src="images/newspaper.png" alt="k" />
@@ -40,13 +48,14 @@ function Links() {
             <img src="images/catalog.png" alt="l" />
             <span>Booklet PPA</span>
           </button>
+
           <a
             target={`_blank`}
             className={style.link}
             href="https://www.bni.co.id/id-id/"
           >
-            <img src="images/bni-46.png" alt="Logo BNI 46" />
-            <span>bni.co.id</span>
+            <img src="images/bni-connect.png" alt="Logo BNI Connect" />
+            <span>Helpdesk</span>
           </a>
         </div>
       </div>
