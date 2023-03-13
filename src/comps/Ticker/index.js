@@ -58,6 +58,10 @@ function Ticker() {
       </Dialog>
 
       <div className={style.tickerContainer}>
+        <button onClick={() => setVisible(true)} className={style.refresh}>
+          <i className="pi pi-refresh"></i>
+        </button>
+
         <button onClick={() => setVisible(true)} className={style.more}>
           More <i className="pi pi-angle-right"></i>
         </button>

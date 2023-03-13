@@ -30,7 +30,7 @@ function Market() {
 
   return (
     <>
-      <Dialog
+      {/* <Dialog
         header={data.title}
         visible={visible}
         style={{ width: "544px" }}
@@ -67,90 +67,37 @@ function Market() {
             </tbody>
           </table>
         </p>
-      </Dialog>
+      </Dialog> */}
 
       <br />
       <br />
-      {/* <br /> */}
 
       <h3>Market Update</h3>
       <div className={style.market}>
-        <div className={style.item}>
+        <a href="/morning-view.pdf" target="_blank" className={style.item}>
           <img src={"/images/stock.png"} alt="h" />
           <div>
-            <label>
-              {/* <span>11 Jun 2023</span> */}
-              Morning Market
-            </label>
-            {/* <button
-              onClick={() =>
-                setModal({
-                  row: dataMarket.data[0].morning_market,
-                  title: "Morning Market Info",
-                })
-              }
-            >
-              Show more
-            </button> */}
+            <label>Morning Market</label>
           </div>
-        </div>
-        <div className={style.item}>
-          <img src={"/images/stock-market.png"} alt="i" />
+        </a>
+        <a href="/fixed-income.pptx" target="_blank" className={style.item}>
+          <img src={"/images/market-research.png"} alt="i" />
           <div>
-            <label>
-              {/* <span>05 Mar 2023</span> */}
-              Fixed Income Weekly
-            </label>
-            {/* <button
-              onClick={() =>
-                setModal({
-                  row: dataMarket.data[1].fixed_income,
-                  title: "Fixed Income Weekly",
-                })
-              }
-            >
-              Show more
-            </button> */}
+            <label>Fixed Income Weekly</label>
           </div>
-        </div>
-        <div className={style.item}>
+        </a>
+        <a href="/market-wrap.pptx" target="_blank" className={style.item}>
           <img alt="a" src={"/images/market-trends.png"} />
           <div>
-            <label>
-              {/* <span>20-30 Jan 2023</span> */}
-              Market Wrap
-            </label>
-            {/* <button
-              onClick={() =>
-                setModal({
-                  row: dataMarket.data[2].market_wrap,
-                  title: "Market Wrap Info",
-                })
-              }
-            >
-              Show more
-            </button> */}
+            <label>Market Wrap</label>
           </div>
-        </div>
-        <div className={style.item}>
-          <img src={"/images/stock-market.png"} alt="i" />
+        </a>
+        <a href="/morning-view.pdf" target="_blank" className={style.item}>
+          <img src={"/images/analytics.png"} alt="i" />
           <div>
-            <label>
-              {/* <span>05 Mar 2023</span> */}
-              Monthly Update
-            </label>
-            {/* <button
-              onClick={() =>
-                setModal({
-                  row: dataMarket.data[1].fixed_income,
-                  title: "Fixed Income Weekly",
-                })
-              }
-            >
-              Show more
-            </button> */}
+            <label>Monthly Update</label>
           </div>
-        </div>
+        </a>
       </div>
     </>
   );

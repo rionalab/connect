@@ -83,12 +83,9 @@ function News() {
                 <a
                   href="https://bit.ly/BNI-SR018"
                   key={i}
-                  // className={style.sliderItem}
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  {/* <img
-                    src="/Portals/1/DNNGalleryPro/uploads/2022/12/30/Kebijakan_dari_BI_terkait_Biaya_Keterlambatan_dan_Min_Pembayaran.jpg"
-                    alt="img"
-                  /> */}
                   <img src={row.image} alt="img" />
                   <div className={style.label}>{row.title}</div>
                 </a>
