@@ -2,6 +2,19 @@ import React from "react";
 import { Dialog } from "primereact/dialog";
 import style from "./style.module.scss";
 
+const text = [
+  "Wishing you the happiest and brigthest day ever!",
+  "Wishing you a fantastic birthday!",
+  "Wish you all the best!",
+  "Enjoy your special day!",
+  "Happy, healthy, wonderful birthday to you!",
+  "I hope this is your best year ever!",
+  "Warm wishes!",
+  "Best wishes on your birthday!",
+  "Wish you good health & happiness!",
+  "The day is yours!",
+];
+
 function BirthdayModal(props) {
   const { visible, toggleModal, img, name } = props;
   return (
@@ -25,11 +38,7 @@ function BirthdayModal(props) {
         <div className={style.text}>
           <h4>Happy Birthday!</h4>
           <h3>{name}</h3>
-          <p>
-            "Another adventure filled year awaits you. Welcome it by celebrating
-            your birthday with pomp and splendor. Wishing you a very happy and
-            fun-filled birthday!"
-          </p>
+          <p>{text[Math.floor(Math.random() * text.length)]}</p>
         </div>
       </div>
     </Dialog>

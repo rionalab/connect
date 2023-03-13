@@ -50,9 +50,9 @@ function Links() {
           </button>
 
           <a
-            target={`_blank`}
+            // target={`_blank`}
             className={style.link}
-            href="https://www.bni.co.id/id-id/"
+            href="/"
           >
             <img src="images/bni-connect.png" alt="Logo BNI Connect" />
             <span>Helpdesk</span>

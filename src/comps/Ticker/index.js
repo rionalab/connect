@@ -67,7 +67,7 @@ function Ticker() {
         </button>
 
         <h3 title="Last update at 22/03/2023" className={style.title}>
-          Kurs TT Counter [22/03] 14:20 WIB
+          Kurs TT Counter [22/03 14:20 WIB]
         </h3>
 
         {true && (
