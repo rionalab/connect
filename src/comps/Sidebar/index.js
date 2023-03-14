@@ -18,7 +18,8 @@ function Sidebar() {
 
         <a
           className={style.btn}
-          href="https://bni.crmnextlab.com/bnirestapi/home/referral"
+          href="/referralform"
+          // href="https://bni.crmnextlab.com/bnirestapi/home/referral"
         >
           <img src="/images/voucher.png" alt="voucher" />
           Click Here

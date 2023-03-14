@@ -4,6 +4,8 @@ import { Dialog } from "primereact/dialog";
 
 function Links() {
   const [visible, setVisible] = useState(false);
+  const initialText = "Helpdesk";
+  const [text, setText] = useState(initialText);
 
   return (
     <>
@@ -50,12 +52,13 @@ function Links() {
           </button>
 
           <a
-            // target={`_blank`}
             className={style.link}
             href="/"
+            onMouseOver={() => setText("WhatsApp: 081345713300")}
+            onMouseLeave={() => setText(initialText)}
           >
             <img src="images/bni-connect.png" alt="Logo BNI Connect" />
-            <span>Helpdesk</span>
+            <span>{text}</span>
           </a>
         </div>
       </div>

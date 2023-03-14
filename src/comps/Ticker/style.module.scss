@@ -90,7 +90,7 @@
 }
 
 .marquee {
-  width: calc(100% - 370px);
+  width: calc(100% - 390px);
   position: absolute;
   left: 54%;
   top: 50%;
@@ -100,48 +100,53 @@
 .tickerItems {
   text-align: center;
 }
-
-.more {
+.button {
   position: absolute;
   right: 0;
-  cursor: pointer;
   top: 50%;
-  transform: translateY(-50%);
-  background: rgba($color: #ffffff, $alpha: 0.1);
-  border-top-right-radius: 111px;
-  border-bottom-right-radius: 111px;
-  height: 45px;
-  width: 80px;
-  border: 0;
-  color: white;
-  font-weight: bold;
-  font-size: 12px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  &:hover {
-    background: rgba($color: #ffffff, $alpha: 0.2);
+  .more {
+    // position: absolute;
+    // right: 0;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba($color: #ffffff, $alpha: 0.1);
+    border-top-right-radius: 111px;
+    border-bottom-right-radius: 111px;
+    height: 45px;
+    width: 80px;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background: rgba($color: #ffffff, $alpha: 0.2);
+    }
   }
-}
 
-.refresh {
-  position: absolute;
-  right: 6.5%;
-  cursor: pointer;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba($color: #ffffff, $alpha: 0.1);
-  height: 45px;
-  width: 50px;
-  border: 0;
-  color: white;
-  font-weight: bold;
-  font-size: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  &:hover {
-    background: rgba($color: #ffffff, $alpha: 0.2);
+  .refresh {
+    // position: absolute;
+    // right: 7%;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba($color: #ffffff, $alpha: 0.1);
+    height: 45px;
+    width: 50px;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background: rgba($color: #ffffff, $alpha: 0.2);
+    }
   }
 }
 

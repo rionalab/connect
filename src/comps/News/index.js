@@ -20,10 +20,16 @@ var settings = {
 function News() {
   const [btn, setBtn] = useState("industry");
   const [showNotif, setShowNotif] = useState(false);
+  const type = [{ value: "Telekomunikasi" }, { value: "Bisnis" }];
+  const [selectedType, setSelectedType] = useState(type[0].value);
   // const [data, setData] = useState(dataNews.data.industry);
 
   const handleClick = (idx) => {
     setBtn(idx);
+  };
+
+  const handleChange = (event) => {
+    setSelectedType(event.target.value);
   };
 
   return (
@@ -68,9 +74,16 @@ function News() {
           </div>
           <div className={style.selectcontainer}>
             {btn === "industry" && (
-              <select className={style.select}>
-                <option>Telekomunikasi</option>
-                <option>Bisnis</option>
+              <select
+                value={selectedType}
+                className={style.select}
+                onChange={handleChange}
+              >
+                {type.map((t) => (
+                  <option key={t.value} value={t.value}>
+                    {t.value}
+                  </option>
+                ))}
               </select>
             )}
           </div>
@@ -87,7 +100,9 @@ function News() {
                   rel="noreferrer"
                 >
                   <img src={row.image} alt="img" />
-                  <div className={style.label}>{row.title}</div>
+                  {row.title !== "" && (
+                    <div className={style.label}>{row.title}</div>
+                  )}
                 </a>
               </div>
             );

@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import style from "./style.module.scss";
-import { Dialog } from "primereact/dialog";
-import dataMarket from "data/market.json";
 
 function Market() {
   const [visible, setVisible] = useState(false);
@@ -30,73 +28,50 @@ function Market() {
 
   return (
     <>
-      {/* <Dialog
-        header={data.title}
-        visible={visible}
-        style={{ width: "544px" }}
-        onHide={() => setVisible(false)}
-      >
-        <p className="m-0">
-          <table cellSpacing={0} className={style.tbl}>
-            <thead>
-              <tr>
-                <th align="left">No</th>
-                <th align="right">File Name</th>
-                <th align="right">Date</th>
-                <th align="right">Download</th>
-              </tr>
-            </thead>
-            <tbody>
-              {data.row.map((tr, id) => (
-                <tr key={id}>
-                  <td>{tr.no}</td>
-                  <td align="right">
-                    <a>
-                      <i className="pi pi-external-link" />
-                      {tr.file_name}
-                    </a>
-                  </td>
-                  <td align="right">{tr.date}</td>
-                  <td align="right">
-                    <button onClick={() => onButtonDownload(tr.url)}>
-                      <i className="pi pi-download" /> Download
-                    </button>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </p>
-      </Dialog> */}
-
       <br />
       <br />
 
       <h3>Market Update</h3>
       <div className={style.market}>
-        <a href="/morning-view.pdf" target="_blank" className={style.item}>
+        <a
+          href="/Morning View 20230314.pdf"
+          target="_blank"
+          className={style.item}
+        >
           <img src={"/images/stock.png"} alt="h" />
-          <div>
-            <label>Morning Market</label>
-          </div>
+          <label>
+            <span>Morning Market</span>
+          </label>
         </a>
-        <a href="/fixed-income.pptx" target="_blank" className={style.item}>
+        <a
+          href="/Fixed Income weekly Update 13 Maret 2023.pdf"
+          target="_blank"
+          className={style.item}
+        >
           <img src={"/images/market-research.png"} alt="i" />
-          <div>
-            <label>Fixed Income Weekly</label>
-          </div>
+          <label>
+            <span>Fixed Income Weekly</span>
+          </label>
         </a>
-        <a href="/market-wrap.pptx" target="_blank" className={style.item}>
+        <a
+          href="/Market Wrap (06 - 10 Maret 2023).pdf"
+          target="_blank"
+          className={style.item}
+        >
           <img alt="a" src={"/images/market-trends.png"} />
-          <div>
-            <label>Market Wrap</label>
-          </div>
+          <label>
+            <span>Market Wrap</span>
+          </label>
         </a>
-        <a href="/morning-view.pdf" target="_blank" className={style.item}>
+        <a
+          href="/Market Outlook 2023 (February).pdf"
+          target="_blank"
+          className={style.item}
+        >
           <img src={"/images/analytics.png"} alt="i" />
-          <div>
-            <label>Monthly Update</label>
-          </div>
+          <label>
+            <span>Monthly Update</span>
+          </label>
         </a>
       </div>
     </>

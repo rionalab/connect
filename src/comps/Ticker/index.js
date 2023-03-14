@@ -58,17 +58,11 @@ function Ticker() {
       </Dialog>
 
       <div className={style.tickerContainer}>
-        <button onClick={() => setVisible(true)} className={style.refresh}>
-          <i className="pi pi-refresh"></i>
-        </button>
-
-        <button onClick={() => setVisible(true)} className={style.more}>
-          More <i className="pi pi-angle-right"></i>
-        </button>
-
-        <h3 title="Last update at 22/03/2023" className={style.title}>
-          Kurs TT Counter [22/03 14:20 WIB]
-        </h3>
+        <div>
+          <h3 title="Last update at 22/03/2023" className={style.title}>
+            Kurs TT Counter [22/03 14:20 WIB]
+          </h3>
+        </div>
 
         {true && (
           <div className={style.marquee}>
@@ -111,6 +105,16 @@ function Ticker() {
             </Marquee>
           </div>
         )}
+
+        <div className={style.button}>
+          <button className={style.refresh}>
+            <i className="pi pi-refresh"></i>
+          </button>
+
+          <button onClick={() => setVisible(true)} className={style.more}>
+            More <i className="pi pi-angle-right"></i>
+          </button>
+        </div>
       </div>
     </>
   );

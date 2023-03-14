@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Homepage from "pages/Homepage";
+import Referral from "pages/Referral";
 import Login from "pages/Login";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "primereact/resources/themes/lara-light-indigo/theme.css";
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login />,
+  },
+  {
+    path: "/referralform",
+    element: <Referral />,
   },
 ]);
 

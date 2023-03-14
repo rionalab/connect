@@ -1,0 +1,95 @@
+.a {
+  font-family: "Poppins", sans-serif;
+  h4 {
+    background-color: #4c939d;
+    color: #ffff;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+  }
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  // z-index: 99;
+  background: white;
+  top: 0;
+  //   border-bottom:0 solid rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.content {
+  height: 90px;
+  width: calc(100% - 300px);
+  display: flex;
+  margin: auto;
+  //   background: black;
+  align-items: center;
+  img {
+    height: 50px;
+  }
+  span {
+    color: #484140;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0px 30px;
+  }
+}
+
+.container {
+  width: calc(100% - 600px);
+  margin: auto;
+  margin-top: 100px;
+  padding-top: 20px;
+}
+
+.dataReferee {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 15px;
+}
+
+.permohonanProduk {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 15px;
+}
+
+.dataNasabah {
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.button {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: right;
+  a {
+    color: white;
+    text-decoration: none;
+    background: #4c939d;
+    padding: 10px 30px;
+    margin-right: 0px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.3s;
+  }
+  a:hover {
+    background: #2f5b61;
+  }
+  i {
+    text-align: left;
+    margin-right: 19px;
+  }
+}
