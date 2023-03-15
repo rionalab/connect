@@ -64,20 +64,16 @@ function Referral() {
 
         <h4>III. Data Nasabah (Debitur)</h4>
         <div className={style.dataNasabah}>
-          <FieldText label="Nama Nasabah" isRequired />
           <div className={style.grid2}>
             <div>
-              <FieldText label="NIK/NIB" />
-              <FieldText label="CIF No." />
-              <FieldText label="Head Office Email" isRequired />
+              <FieldText label="Nama Nasabah" isRequired />
+              <FieldText label="Telephone No." isRequired />
             </div>
             <div>
-              <FieldText label="NPWP" />
-              <FieldText label="Account Number" />
-              <FieldText label="Head Office Telp. Numbrt" isRequired />
+              <FieldText label="Address" isRequired />
+              <FieldText label="PIC Name" isRequired />
             </div>
           </div>
-          <FieldText label="Referral Priority" isRequired />
         </div>
 
         <div className={style.button}>
