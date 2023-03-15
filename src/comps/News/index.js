@@ -37,7 +37,7 @@ function News() {
       <Dialog
         visible={showNotif}
         style={{ width: "300px" }}
-        className={style.dialog + " birthdayDialog"}
+        className={style.dialog + " cleanDialog"}
         onHide={() => setShowNotif(false)}
       >
         <div>
@@ -92,7 +92,7 @@ function News() {
         <Slider {...settings}>
           {data.data[`${btn}`].map((row, i) => {
             return (
-              <div className={style.sliderItem}>
+              <div className={style.sliderItem} key={i}>
                 <a
                   href="https://bit.ly/BNI-SR018"
                   key={i}
@@ -108,6 +108,7 @@ function News() {
             );
           })}
         </Slider>
+
         <a onClick={() => setShowNotif(true)} className={style.more}>
           Show more from {btn}
         </a>

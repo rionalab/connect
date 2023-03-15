@@ -18,24 +18,17 @@ function Referral() {
       </div>
 
       <div className={style.container}>
-        <h4>I. Data Referee</h4>
-        <div className={style.dataReferee}>
-          <div>
-            <FieldText label="Referee Name" isRequired />
-            <FieldText label="Referee Name" isRequired />
-          </div>
-          <div>
-            <FieldSelect
-              label="Referral Priority"
-              isRequired
-              options={[
-                { name: "Low Priority" },
-                { name: "Medium Priority" },
-                { name: "High Priority" },
-              ]}
-              optionLabel="name"
-            />
-            <FieldText label="Referee NPP" isRequired />
+        <h4>I. Data Nasabah (Debitur)</h4>
+        <div className={style.dataNasabah}>
+          <div className={style.grid2}>
+            <div>
+              <FieldText label="Nama Nasabah" isRequired />
+              <FieldText label="Telephone No." isRequired />
+            </div>
+            <div>
+              <FieldText label="Address" isRequired />
+              <FieldText label="PIC Name" isRequired />
+            </div>
           </div>
         </div>
 
@@ -62,17 +55,25 @@ function Referral() {
           <FieldText label="Max. Facility Credit" />
         </div>
 
-        <h4>III. Data Nasabah (Debitur)</h4>
-        <div className={style.dataNasabah}>
-          <div className={style.grid2}>
-            <div>
-              <FieldText label="Nama Nasabah" isRequired />
-              <FieldText label="Telephone No." isRequired />
-            </div>
-            <div>
-              <FieldText label="Address" isRequired />
-              <FieldText label="PIC Name" isRequired />
-            </div>
+        <h4>III. Data Referee</h4>
+        <div className={style.dataReferee}>
+          <div>
+            <FieldText label="Referee Name" isRequired />
+            <FieldText label="Referee Email" isRequired />
+          </div>
+          <div>
+            {/* <FieldSelect
+              label="Referral Priority"
+              isRequired
+              options={[
+                { name: "Low Priority" },
+                { name: "Medium Priority" },
+                { name: "High Priority" },
+              ]}
+              optionLabel="name"
+            /> */}
+            <FieldText label="Referee Phone Number" isRequired />
+            <FieldText label="Referee NPP" isRequired />
           </div>
         </div>
 

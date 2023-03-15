@@ -21,7 +21,7 @@ function BirthdayModal(props) {
     <Dialog
       visible={visible}
       style={{ width: "490px" }}
-      className={style.dialog + " birthdayDialog"}
+      className={style.dialog + " cleanDialog"}
       onHide={() => toggleModal(false)}
     >
       <div className={style.content}>

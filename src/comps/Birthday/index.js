@@ -28,7 +28,7 @@ function Birthday() {
       <Dialog
         visible={showNotif}
         style={{ width: "300px" }}
-        className={style.dialog + " birthdayDialog"}
+        className={style.dialog + " cleanDialog"}
         onHide={() => setShowNotif(false)}
       >
         <div>
