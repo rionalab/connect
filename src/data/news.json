@@ -3,29 +3,45 @@
     "industry": [
       {
         "image": "images/news-1.jpg",
-        "title": "Langkah Strategis IOH Dorong Industri Telekomunikasi, Tingkatkan Inovasi Bersama SRv6 - Tribun Bali"
+        "title": "Langkah Strategis IOH Dorong Industri Telekomunikasi, Tingkatkan Inovasi Bersama SRv6 - Tribun Bali",
+        "url": "/"
       },
       {
         "image": "images/news-2.jpg",
-        "title": "Majukan Industri Telekomunikasi, Telkom University Jalin MoU ... - IniSumedang.Com"
+        "title": "Majukan Industri Telekomunikasi, Telkom University Jalin MoU ... - IniSumedang.Com",
+        "url": "/"
       },
       {
         "image": "images/news-3.jpg",
-        "title": "InfoPublik - PT INTI Optimistis Lanjutkan Kinerja Positif di 2023"
+        "title": "InfoPublik - PT INTI Optimistis Lanjutkan Kinerja Positif di 2023",
+        "url": "/"
       }
     ],
     "BNI": [
       {
-        "image": "images/a.png",
-        "title": ""
+        "image": "images/Analisis Kinerja Bisnis dan Keuangan KBMI-4 (Posisi Juni 22) final.jpg",
+        "title": "",
+        "url": "/Analisis Kinerja Bisnis dan Keuangan KBMI-4 (Posisi Juni 22) final.pdf"
       },
       {
-        "image": "images/b.png",
-        "title": ""
+        "image": "images/Materi Podcast Industry Risk Pembiayaan Padi & Jagung.jpg",
+        "title": "",
+        "url": "/Materi Podcast Industry Risk Pembiayaan Padi & Jagung.pdf"
       },
       {
-        "image": "images/c.png",
-        "title": ""
+        "image": "images/Outlook Energi Fosil serta Energi Terbarukan 07072022.jpg",
+        "title": "",
+        "url": "/Outlook Energi Fosil serta Energi Terbarukan 07072022.pdf"
+      },
+      {
+        "image": "images/TKR_CREDIT APPROVAL PROCESS 18092022-final.jpg",
+        "title": "",
+        "url": "/TKR_CREDIT APPROVAL PROCESS 18092022-final.pdf"
+      },
+      {
+        "image": "images/TKR_Early Restructuring 061022 1644-1.jpg",
+        "title": "",
+        "url": "/TKR_Early Restructuring 061022 1644-1.pdf"
       }
     ]
   }

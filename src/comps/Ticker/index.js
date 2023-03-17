@@ -16,9 +16,11 @@ function Ticker() {
   return (
     <>
       <Dialog
+        dismissableMask={true}
         header="Kurs TT Counter"
         visible={visible}
-        style={{ width: "544px" }}
+        // style={{ width: "55vw" }}
+        className={style.modal}
         onHide={() => setVisible(false)}
       >
         <p className="m-0">

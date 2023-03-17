@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import style from "./style.module.scss";
-import Footer from "comps/Footer";
+import dataCategory from "data/category_news.json";
 import { Dialog } from "primereact/dialog";
 
 var settings = {
@@ -20,21 +20,31 @@ var settings = {
 function News() {
   const [btn, setBtn] = useState("industry");
   const [showNotif, setShowNotif] = useState(false);
-  const type = [{ value: "Telekomunikasi" }, { value: "Bisnis" }];
-  const [selectedType, setSelectedType] = useState(type[0].value);
-  // const [data, setData] = useState(dataNews.data.industry);
+  const [category, setCategory] = useState(
+    dataCategory.list_industry_news[0].category
+  );
+  const [dtSubcat, setDtSubcat] = useState(
+    dataCategory.list_industry_news[0].sub
+  );
 
   const handleClick = (idx) => {
     setBtn(idx);
   };
 
-  const handleChange = (event) => {
-    setSelectedType(event.target.value);
+  const handleChange = (e) => {
+    setCategory(e.target.value);
+
+    const _filter = dataCategory.list_industry_news.filter(
+      (v) => v.category === e.target.value
+    );
+
+    setDtSubcat(_filter[0].sub);
   };
 
   return (
     <>
       <Dialog
+        dismissableMask={true}
         visible={showNotif}
         style={{ width: "300px" }}
         className={style.dialog + " cleanDialog"}
@@ -54,37 +64,50 @@ function News() {
 
       <div className={style.container}>
         <div className={style.filter}>
-          <div>
-            <div className={style.btns}>
-              <button
-                onClick={() => handleClick("industry")}
-                className={`${style.btn} ${
-                  btn === "industry" && style.btnActive
-                }`}
-              >
-                Industry News
-              </button>
-              <button
-                onClick={() => handleClick("BNI")}
-                className={`${style.btn} ${btn === "BNI" && style.btnActive}`}
-              >
-                BNI News
-              </button>
-            </div>
+          <div className={style.btns}>
+            <button
+              onClick={() => handleClick("industry")}
+              className={`${style.btn} ${
+                btn === "industry" && style.btnActive
+              }`}
+            >
+              Industry News
+            </button>
+            <button
+              onClick={() => handleClick("BNI")}
+              className={`${style.btn} ${btn === "BNI" && style.btnActive}`}
+            >
+              BNI News
+            </button>
           </div>
+
           <div className={style.selectcontainer}>
             {btn === "industry" && (
-              <select
-                value={selectedType}
-                className={style.select}
-                onChange={handleChange}
-              >
-                {type.map((t) => (
-                  <option key={t.value} value={t.value}>
-                    {t.value}
-                  </option>
-                ))}
-              </select>
+              <>
+                <select
+                  value={category}
+                  className={style.select}
+                  onChange={handleChange}
+                >
+                  {dataCategory.list_industry_news.map((t, id) => (
+                    <option key={id} value={t.category}>
+                      {t.category}
+                    </option>
+                  ))}
+                </select>
+
+                <select
+                  // value={selectedType}
+                  className={style.select}
+                  // onChange={handleChange}
+                >
+                  {dtSubcat.map((t, id) => (
+                    <option key={id} value={t.title}>
+                      {t.title}
+                    </option>
+                  ))}
+                </select>
+              </>
             )}
           </div>
         </div>
@@ -93,12 +116,7 @@ function News() {
           {data.data[`${btn}`].map((row, i) => {
             return (
               <div className={style.sliderItem} key={i}>
-                <a
-                  href="https://bit.ly/BNI-SR018"
-                  key={i}
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href={row.url} key={i} target="_blank" rel="noreferrer">
                   <img src={row.image} alt="img" />
                   {row.title !== "" && (
                     <div className={style.label}>{row.title}</div>
@@ -109,9 +127,11 @@ function News() {
           })}
         </Slider>
 
-        <a onClick={() => setShowNotif(true)} className={style.more}>
-          Show more from {btn}
-        </a>
+        <div className={style.showdiv}>
+          <a onClick={() => setShowNotif(true)} className={style.more}>
+            Show more from {btn}
+          </a>
+        </div>
 
         <Market />
 

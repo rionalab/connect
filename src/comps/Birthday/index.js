@@ -26,6 +26,7 @@ function Birthday() {
       />
 
       <Dialog
+        dismissableMask={true}
         visible={showNotif}
         style={{ width: "300px" }}
         className={style.dialog + " cleanDialog"}

@@ -1,0 +1,70 @@
+{
+  "list_industry_news": [
+    {
+      "category": "Pertanian, Kehutanan & Perikanan",
+      "sub": [
+        { "title": "Industri Pertanian & Perkebunan", "url": "" },
+        { "title": "Industri Kehutanan", "url": "" },
+        { "title": "Industri Tembakau", "url": "" },
+        { "title": "Industri Perikanan", "url": "" },
+        { "title": "Industri Karet", "url": "" }
+      ]
+    },
+    {
+      "category": "Industri Pengolahan",
+      "sub": [
+        { "title": "Industri Logam", "url": "" },
+        { "title": "Industri Kimia", "url": "" },
+        { "title": "Industri Makanan & Minuman", "url": "" },
+        { "title": "Industri Mekanik & Elektrik", "url": "" },
+        { "title": "Industri Kayu & Kertas", "url": "" },
+        { "title": "Industri Kemasan", "url": "" },
+        { "title": "Industri Plastik", "url": "" },
+        { "title": "Industri Tekstil", "url": "" },
+        { "title": "Industri Percetakan", "url": "" },
+        { "title": "Industri Pupuk", "url": "" },
+        { "title": "Industri Penerbangan", "url": "" }
+      ]
+    },
+    {
+      "category": "Jasa",
+      "sub": [
+        { "title": "Industri Jasa Profesional & Keuangan", "url": "" },
+        { "title": "Industri Jasa Kesehatan", "url": "" },
+        { "title": "Industri Pelayanan Publik", "url": "" },
+        { "title": "Industri Ekspedisi", "url": "" },
+        { "title": "Industri Logistik", "url": "" },
+        { "title": "Jasa Angkutan Darat", "url": "" },
+        { "title": "Jasa Angkutan Laut", "url": "" },
+        { "title": "Pendidikan", "url": "" },
+        { "title": "Industri Pariwisata", "url": "" },
+        { "title": "Industri Konstruksi", "url": "" },
+        { "title": "Industri Telekomunikasi", "url": "" },
+        { "title": "Industri Penyiaran", "url": "" }
+      ]
+    },
+    {
+      "category": "Listrik & Energi",
+      "sub": [
+        { "title": "Industri Kelistrikan", "url": "" },
+        { "title": "Industri Energi", "url": "" }
+      ]
+    },
+    {
+      "category": "Migas & Pertambangan",
+      "sub": [
+        { "title": "Industri Migas", "url": "" },
+        { "title": "Industri Pertambangan", "url": "" }
+      ]
+    },
+    {
+      "category": "Ekonomi, Perdagangan & Properti",
+      "sub": [
+        { "title": "Ekonomi Nasional", "url": "" },
+        { "title": "Industri Perdagangan Retail", "url": "" },
+        { "title": "Industri Perdagangan Grosir", "url": "" },
+        { "title": "Real Estate", "url": "" }
+      ]
+    }
+  ]
+}

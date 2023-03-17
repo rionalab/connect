@@ -59,6 +59,11 @@
 
 .dialog {
   text-align: center;
+  width: 100%; /* Full width */
+  max-width: 40%;
+  // height: 100%; /* Full height */
+  overflow: auto;
+  // margin-left: 20px;
 }
 
 .content {
@@ -87,17 +92,14 @@
   }
 }
 
-// .menu {
-//   font-family: "Poppins", sans-serif;
-//   display: grid;
-//   text-decoration: none;
-//   margin: 15px 0px;
-//   color: black;
-//   font-weight: 600;
-//   font-size: 16px;
-//   background-color: #f4f4f4;
-//   padding-top: 10px;
-//   padding-bottom: 10px;
-//   border-radius: 10px;
-//   overflow-y: hidden;
-// }
+@media screen and (max-width: 940px) {
+  .dialog {
+    max-width: 65%;
+  }
+}
+
+@media screen and (max-width: 522px) {
+  .dialog {
+    max-width: 80%;
+  }
+}

@@ -4,10 +4,11 @@ import { classNames } from "primereact/utils";
 import style from "./style.module.scss";
 
 function FieldSelect(props) {
-  const [selectedVal, setselectedVal] = useState(null);
   const {
     label,
     optionLabel,
+    selectedVal,
+    setselectedVal,
     options,
     // name,
     className = "",

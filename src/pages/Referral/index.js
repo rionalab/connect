@@ -1,12 +1,16 @@
 import FieldSelect from "comps/forms/FieldSelect";
 import FieldText from "comps/forms/FieldText";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import style from "./style.module.scss";
 
 function Referral() {
+  const [productCtg, setProductCtg] = useState(null);
+  const [product, setProduct] = useState(null);
   useEffect(() => {
     document.title = "BNI Connect | Referral Form";
   }, []);
+
+  // console.log(productCtg);
 
   return (
     <div className={`${style.a}`}>
@@ -35,6 +39,8 @@ function Referral() {
         <h4>II. Permohonan Produk</h4>
         <div className={style.permohonanProduk}>
           <FieldSelect
+            selectedVal={productCtg}
+            setselectedVal={setProductCtg}
             label="Product Category"
             options={[
               { name: "Loan" },
@@ -44,6 +50,8 @@ function Referral() {
             optionLabel="name"
           />
           <FieldSelect
+            selectedVal={product}
+            setselectedVal={setProduct}
             label="Product"
             options={[
               { name: "KMK BNI" },
@@ -52,7 +60,23 @@ function Referral() {
             ]}
             optionLabel="name"
           />
-          <FieldText label="Max. Facility Credit" />
+          {productCtg?.name === "Loan" ? (
+            <FieldSelect
+              selectedVal={product}
+              setselectedVal={setProduct}
+              label="Max. Facility Credit"
+              options={[
+                { name: "≥ 500 Miliar (Korporasi)" },
+                { name: "150 Miliar s.d 500 Miliar (Large Commercial)" },
+                { name: "15 Miliar s.d 150 Miliar (Commercial)" },
+                { name: "1 Miliar s.d 15 Miliar (SME)" },
+                { name: "N/A" },
+              ]}
+              optionLabel="name"
+            />
+          ) : (
+            <FieldText label="Max. Facility Credit" />
+          )}
         </div>
 
         <h4>III. Data Referee</h4>
@@ -62,16 +86,6 @@ function Referral() {
             <FieldText label="Referee Email" isRequired />
           </div>
           <div>
-            {/* <FieldSelect
-              label="Referral Priority"
-              isRequired
-              options={[
-                { name: "Low Priority" },
-                { name: "Medium Priority" },
-                { name: "High Priority" },
-              ]}
-              optionLabel="name"
-            /> */}
             <FieldText label="Referee Phone Number" isRequired />
             <FieldText label="Referee NPP" isRequired />
           </div>

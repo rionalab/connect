@@ -1,7 +1,9 @@
 .tickerContainer {
-  position: relative;
+  // position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   width: 100%;
-  // background-color: rgb(0, 47, 48);
   background: #2e9cb0;
 
   height: 45px !important;
@@ -10,23 +12,80 @@
 }
 
 .title {
-  position: absolute;
+  // position: absolute;
+  width: 210px;
   color: white;
   font-weight: 700;
   font-size: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 20px;
+  margin: 0 10px;
+
+  // top: 50%;
+  // transform: translateY(-50%);
+  // left: 20px;
 }
 
-.ticker {
-  background-color: rgb(0, 47, 48);
-  background: #2e9cb0;
-  overflow: hidden;
-  padding-top: 8px;
-  margin-bottom: 16px;
-  margin-top: 16px;
-  // width: calc(100% - 300px);
+.marquee {
+  width: calc(100% - 400px);
+  flex: 1;
+  // position: absolute;
+  // // left: 54%;
+  // top: 50%;
+  // transform: translate(-50%, -50%);
+}
+
+.tickerItems {
+  text-align: center;
+}
+
+.button {
+  // position: absolute;
+  // right: 0;
+  // top: 50%;
+  width: 100px;
+  display: flex;
+  .more {
+    // position: absolute;
+    // right: 0;
+    cursor: pointer;
+    // top: 50%;
+    // transform: translateY(-50%);
+    background: rgba($color: #ffffff, $alpha: 0.1);
+    border-top-right-radius: 111px;
+    border-bottom-right-radius: 111px;
+    height: 45px;
+    width: 80px;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background: rgba($color: #ffffff, $alpha: 0.2);
+    }
+  }
+
+  .refresh {
+    // position: absolute;
+    // right: 7%;
+    cursor: pointer;
+    // top: 50%;
+    // transform: translateY(-50%);
+    background: rgba($color: #ffffff, $alpha: 0.1);
+    height: 45px;
+    width: 50px;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background: rgba($color: #ffffff, $alpha: 0.2);
+    }
+  }
 }
 
 .sell {
@@ -89,67 +148,6 @@
   }
 }
 
-.marquee {
-  width: calc(100% - 390px);
-  position: absolute;
-  left: 54%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.tickerItems {
-  text-align: center;
-}
-.button {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  display: flex;
-  .more {
-    // position: absolute;
-    // right: 0;
-    cursor: pointer;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba($color: #ffffff, $alpha: 0.1);
-    border-top-right-radius: 111px;
-    border-bottom-right-radius: 111px;
-    height: 45px;
-    width: 80px;
-    border: 0;
-    color: white;
-    font-weight: bold;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &:hover {
-      background: rgba($color: #ffffff, $alpha: 0.2);
-    }
-  }
-
-  .refresh {
-    // position: absolute;
-    // right: 7%;
-    cursor: pointer;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba($color: #ffffff, $alpha: 0.1);
-    height: 45px;
-    width: 50px;
-    border: 0;
-    color: white;
-    font-weight: bold;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &:hover {
-      background: rgba($color: #ffffff, $alpha: 0.2);
-    }
-  }
-}
-
 .tickerItem {
   //   display: grid;
   display: inline-block;
@@ -183,4 +181,36 @@
       }
     }
   }
+}
+
+.modal {
+  width: 100%; /* Full width */
+  max-width: 40%;
+  // height: 100%; /* Full height */
+  overflow: auto;
+  // margin-left: 20px;
+}
+
+@media screen and (max-width: 940px) {
+  .modal {
+    max-width: 65%;
+  }
+}
+
+@media screen and (max-width: 522px) {
+  .title {
+    display: none;
+  }
+  .marquee {
+    margin-left: 20px;
+  }
+  .modal {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+}
+
+@media screen and (max-width: 280px) {
 }

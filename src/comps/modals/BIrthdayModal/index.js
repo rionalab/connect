@@ -19,6 +19,7 @@ function BirthdayModal(props) {
   const { visible, toggleModal, img, name } = props;
   return (
     <Dialog
+      dismissableMask={true}
       visible={visible}
       style={{ width: "490px" }}
       className={style.dialog + " cleanDialog"}

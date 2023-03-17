@@ -1,0 +1,62 @@
+{
+  "data": {
+    "orangeMagazine": [
+      {
+        "title": "Simpanan",
+        "url": "https://bniorangemagazine.com/simpanan"
+      },
+      {
+        "title": "E-Banking",
+        "url": "https://bniorangemagazine.com/e-banking"
+      },
+      {
+        "title": "Pinjaman",
+        "url": "https://bniorangemagazine.com/pinjaman"
+      },
+      {
+        "title": "Kartu Kredit",
+        "url": "https://bniorangemagazine.com/kartu-kredit"
+      },
+      {
+        "title": "Investasi",
+        "url": "https://bniorangemagazine.com/investasi"
+      },
+      {
+        "title": "Asuransi",
+        "url": "https://bniorangemagazine.com/asuransi"
+      },
+      {
+        "title": "Produk & Jasa Internasional",
+        "url": "https://bniorangemagazine.com/produk-jasa-inter"
+      },
+      { "title": "BNI Xpora", "url": "https://xpora.bni.co.id" },
+      {
+        "title": "Solusi Wholesale",
+        "url": "https://bniorangemagazine.com/solusiwholesale"
+      },
+      { "title": "Promo BNI", "url": "https://bniexperience.bni.co.id/" }
+    ],
+    "bookletPPA": [
+      {
+        "title": "BNI Multifinance",
+        "url": "/BNI Multifinance.pdf"
+      },
+      {
+        "title": "BNI Sekuritas",
+        "url": "/BNI Sekuritas.pdf"
+      },
+      {
+        "title": "BNI Life",
+        "url": "/BNI Life.pdf"
+      },
+      {
+        "title": "BNI Asset Management",
+        "url": "/BNI Asset Management.pdf"
+      },
+      {
+        "title": "BNI Remittance Ltd",
+        "url": "/BNI Remittance Ltd.pdf"
+      }
+    ]
+  }
+}

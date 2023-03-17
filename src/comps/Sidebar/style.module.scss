@@ -14,14 +14,14 @@
   margin-top: 10px;
   padding: 5px;
   border-radius: 17px;
+  align-items: center;
   justify-content: center;
   transition: 0.3s;
   cursor: pointer;
 
   img {
     height: 30px;
-    padding: 0px 10px;
-    padding-bottom: 5px;
+    padding: 5px;
   }
   &:hover {
     background: #cd4e18;
@@ -45,5 +45,11 @@
   background-color: #f7e6ae;
   p {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .sidebar {
+    // display: none;
   }
 }
