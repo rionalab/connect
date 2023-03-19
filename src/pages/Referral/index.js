@@ -21,7 +21,7 @@ function Referral() {
         </div>
       </div>
 
-      <div className={style.container}>
+      <div className={` ${style.container}`}>
         <h4>I. Data Nasabah (Debitur)</h4>
         <div className={style.dataNasabah}>
           <div className={style.grid2}>
@@ -75,7 +75,7 @@ function Referral() {
               optionLabel="name"
             />
           ) : (
-            <FieldText label="Max. Facility Credit" />
+            <FieldText label="Max. Facility Credit" isReadonly={true} />
           )}
         </div>
 

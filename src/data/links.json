@@ -3,58 +3,79 @@
     "orangeMagazine": [
       {
         "title": "Simpanan",
+        "image": "images/simpanan.jpeg",
         "url": "https://bniorangemagazine.com/simpanan"
       },
       {
         "title": "E-Banking",
+        "image": "images/ebank.jpeg",
         "url": "https://bniorangemagazine.com/e-banking"
       },
       {
         "title": "Pinjaman",
+        "image": "images/pinjaman.jpeg",
         "url": "https://bniorangemagazine.com/pinjaman"
       },
       {
         "title": "Kartu Kredit",
+        "image": "images/kredit.jpeg",
         "url": "https://bniorangemagazine.com/kartu-kredit"
       },
       {
         "title": "Investasi",
+        "image": "images/investasi.jpeg",
         "url": "https://bniorangemagazine.com/investasi"
       },
       {
         "title": "Asuransi",
+        "image": "images/asuransi.jpeg",
         "url": "https://bniorangemagazine.com/asuransi"
       },
       {
         "title": "Produk & Jasa Internasional",
+        "image": "images/i.png",
         "url": "https://bniorangemagazine.com/produk-jasa-inter"
       },
-      { "title": "BNI Xpora", "url": "https://xpora.bni.co.id" },
+      {
+        "title": "BNI Xpora",
+        "image": "images/xpora.png",
+        "url": "https://xpora.bni.co.id"
+      },
       {
         "title": "Solusi Wholesale",
+        "image": "images/wholesale.jpeg",
         "url": "https://bniorangemagazine.com/solusiwholesale"
       },
-      { "title": "Promo BNI", "url": "https://bniexperience.bni.co.id/" }
+      {
+        "title": "Promo BNI",
+        "image": "images/k.png",
+        "url": "https://bniexperience.bni.co.id/"
+      }
     ],
     "bookletPPA": [
       {
         "title": "BNI Multifinance",
+        "image": "images/investasi.jpeg",
         "url": "/BNI Multifinance.pdf"
       },
       {
         "title": "BNI Sekuritas",
+        "image": "images/simpanan.jpeg",
         "url": "/BNI Sekuritas.pdf"
       },
       {
         "title": "BNI Life",
+        "image": "images/asuransi.jpeg",
         "url": "/BNI Life.pdf"
       },
       {
         "title": "BNI Asset Management",
+        "image": "images/k.png",
         "url": "/BNI Asset Management.pdf"
       },
       {
         "title": "BNI Remittance Ltd",
+        "image": "images/i.png",
         "url": "/BNI Remittance Ltd.pdf"
       }
     ]

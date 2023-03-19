@@ -76,12 +76,14 @@ function Ticker() {
                       return (
                         <div className={style.tickerItem} key={row2.name}>
                           <div>
-                            <div>{row2.name}</div>
-                            <div>
-                              <img
-                                src={`/images/${row2.name}.jpg`}
-                                alt={row2.name}
-                              />
+                            <div className={style.flag}>
+                              <div>{row2.name}</div>
+                              <div>
+                                <img
+                                  src={`/images/${row2.name}.jpg`}
+                                  alt={row2.name}
+                                />
+                              </div>
                             </div>
                             <div>
                               <span className={style.sell}>

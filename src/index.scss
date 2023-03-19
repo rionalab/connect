@@ -33,6 +33,10 @@
   font-style: normal;
 }
 
+.slideIn {
+  animation: anim 1.5s;
+}
+
 .pageContainer {
   width: 1600px;
   max-width: 80vw;
@@ -92,6 +96,11 @@
       }
     }
   }
+}
+
+.p-menuitem {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
 }
 
 @keyframes anim {

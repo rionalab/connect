@@ -90,14 +90,17 @@
 
 .sell {
   span {
-    color: #a02424;
+    color: white;
+    // color: #a02424;
+
     font-weight: 600;
   }
 }
 
 .buy {
   span {
-    color: #1b591b;
+    color: white;
+    // color: #1b591b;
     font-weight: 600;
   }
 }
@@ -149,7 +152,7 @@
 }
 
 .tickerItem {
-  //   display: grid;
+  // display: grid;
   display: inline-block;
   margin: 0 16px;
   align-content: center;
@@ -180,6 +183,13 @@
         align-self: center;
       }
     }
+  }
+}
+
+.flag {
+  font-size: 14px;
+  img {
+    height: 15px;
   }
 }
 

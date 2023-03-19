@@ -11,7 +11,6 @@ function Homepage() {
     "https://news.google.com/rss/search?q=Industri+Mekanik+Elektrik&hl=id&gl=ID&ceid=ID:id";
   // "https://www.youtube.com/feeds/videos.xml?channel_id=UC4woSp8ITBoYDmjkukhEhxg";
   // "https://rss.app/feeds/Pmmii6cU23Ne6qa4.xml";
-  const corsProxy = "https://cors.eu.org/";
 
   const urlKurs = "http://192.168.143.61:57004/CoreService";
 
@@ -47,7 +46,7 @@ function Homepage() {
   };
 
   const getFeed = async () => {
-    await fetch(corsProxy + url)
+    await fetch(url)
       .then((res) => res.text())
       .then((data) =>
         parseString(data, (err, res) => {
@@ -59,7 +58,7 @@ function Homepage() {
   };
 
   React.useEffect(() => {
-    // getFeed();
+    getFeed();
     getKurs();
   }, []);
 

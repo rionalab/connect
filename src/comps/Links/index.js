@@ -12,36 +12,40 @@ function Links() {
   return (
     <>
       <Dialog
-        header="Booklet PPA"
         dismissableMask={true}
         visible={visible}
-        className={style.dialog + " orangeDialog"}
+        className={style.dialog + " cleanDialog"}
         onHide={() => setVisible(false)}
       >
-        <div className={style.content}>
-          {dataLink.data.bookletPPA.map((menu, i) => (
-            // className={style.menu}
-            <a href={menu.url} target={`_blank`} key={i}>
-              {menu.title}
-            </a>
-          ))}
+        <div className={style.containermenu}>
+          <p>Booklet PPA Category</p>
+          <div className={style.content}>
+            {dataLink.data.bookletPPA.map((menu, i) => (
+              <a href={menu.url} target={`_blank`} key={i}>
+                <img src={menu.image} alt={menu.title} />
+                <span>{menu.title}</span>
+              </a>
+            ))}
+          </div>
         </div>
       </Dialog>
 
       <Dialog
-        header="Orange Magazine"
         dismissableMask={true}
         visible={visible2}
-        className={style.dialog + " orangeDialog"}
+        className={style.dialog + " cleanDialog"}
         onHide={() => setVisible2(false)}
       >
-        <div className={style.content}>
-          {dataLink.data.orangeMagazine.map((menu, i) => (
-            // className={style.menu}
-            <a href={menu.url} target={`_blank`} key={i}>
-              {menu.title}
-            </a>
-          ))}
+        <div className={style.containermenu}>
+          <p>Orange Magazine Menu Category</p>
+          <div className={style.content}>
+            {dataLink.data.orangeMagazine.map((menu, i) => (
+              <a href={menu.url} target={`_blank`} key={i}>
+                <img src={menu.image} alt={menu.title} />
+                <span>{menu.title}</span>
+              </a>
+            ))}
+          </div>
         </div>
       </Dialog>
 

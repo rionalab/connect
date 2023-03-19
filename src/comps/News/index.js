@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import data from "data/news.json";
 import Market from "comps/Market";
 import Slider from "react-slick";
@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import style from "./style.module.scss";
 import dataCategory from "data/category_news.json";
 import { Dialog } from "primereact/dialog";
+import { TieredMenu } from "primereact/tieredmenu";
 
 var settings = {
   infinite: true,
@@ -20,26 +21,304 @@ var settings = {
 function News() {
   const [btn, setBtn] = useState("industry");
   const [showNotif, setShowNotif] = useState(false);
-  const [category, setCategory] = useState(
-    dataCategory.list_industry_news[0].category
-  );
-  const [dtSubcat, setDtSubcat] = useState(
-    dataCategory.list_industry_news[0].sub
-  );
+  const menu = useRef(null);
+
+  const categoryType = [
+    {
+      label: "Pertanian, Kehutanan & Perikanan",
+      items: [
+        {
+          label: "Industri Pertanian & Perkebunan",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Industri Pertanian & Perkebunan" });
+          },
+        },
+        {
+          label: "Industri Kehutanan",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Industri Kehutanan" });
+          },
+        },
+        {
+          label: "Industri Tembakau",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Industri Tembakau" });
+          },
+        },
+        {
+          label: "Industri Perikanan",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Industri Perikanan" });
+          },
+        },
+        {
+          label: "Industri Karet",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Industri Karet" });
+          },
+        },
+      ],
+    },
+    {
+      label: "Industri Pengolahan",
+      items: [
+        {
+          label: "Industri Logam",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Industri Logam" });
+          },
+        },
+        {
+          label: "Industri Kimia",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Industri Kimia" });
+          },
+        },
+        {
+          label: "Industri Makanan & Minuman",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Industri Makanan & Minuman" });
+          },
+        },
+        {
+          label: "Industri Mekanik & Elektrik",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Industri Mekanik & Elektrik" });
+          },
+        },
+        {
+          label: "Industri Kayu & Kertas",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Industri Kayu & Kertas" });
+          },
+        },
+        {
+          label: "Industri Kemasan",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Industri Kemasan" });
+          },
+        },
+        {
+          label: "Industri Plastik",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Industri Plastik" });
+          },
+        },
+        {
+          label: "Industri Tekstil",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Industri Tekstil" });
+          },
+        },
+        {
+          label: "Industri Percetakan",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Industri Percetakan" });
+          },
+        },
+        {
+          label: "Industri Pupuk",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Industri Pupuk" });
+          },
+        },
+        {
+          label: "Industri Penerbangan",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Industri Penerbangan" });
+          },
+        },
+      ],
+    },
+    {
+      label: "Jasa",
+      items: [
+        {
+          label: "Industri Jasa Profesional & Keuangan",
+          url: "",
+          command: () => {
+            setCategorySelected({
+              label: "Industri Jasa Profesional & Keuangan",
+            });
+          },
+        },
+        {
+          label: "Industri Jasa Kesehatan",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Industri Jasa Kesehatan" });
+          },
+        },
+        {
+          label: "Industri Pelayanan Publik",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Industri Pelayanan Publik" });
+          },
+        },
+        {
+          label: "Industri Ekspedisi",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Industri Ekspedisi" });
+          },
+        },
+        {
+          label: "Industri Logistik",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Industri Logistik" });
+          },
+        },
+        {
+          label: "Jasa Angkutan Darat",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Jasa Angkutan Darat" });
+          },
+        },
+        {
+          label: "Jasa Angkutan Laut",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Jasa Angkutan Laut" });
+          },
+        },
+        {
+          label: "Pendidikan",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Pendidikan" });
+          },
+        },
+        {
+          label: "Industri Pariwisata",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Industri Pariwisata" });
+          },
+        },
+        {
+          label: "Industri Konstruksi",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Industri Konstruksi" });
+          },
+        },
+        {
+          label: "Industri Telekomunikasi",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Industri Telekomunikasi" });
+          },
+        },
+        {
+          label: "Industri Penyiaran",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Industri Penyiaran" });
+          },
+        },
+      ],
+    },
+    {
+      label: "Listrik & Energi",
+      items: [
+        {
+          label: "Industri Kelistrikan",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Industri Kelistrikan" });
+          },
+        },
+        {
+          label: "Industri Energi",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Industri Energi" });
+          },
+        },
+      ],
+    },
+    {
+      label: "Migas & Pertambangan",
+      items: [
+        {
+          label: "Industri Migas",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Industri Migas" });
+          },
+        },
+        {
+          label: "Industri Pertambangan",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Industri Pertambangan" });
+          },
+        },
+      ],
+    },
+    {
+      label: "Ekonomi, Perdagangan & Properti",
+      items: [
+        {
+          label: "Ekonomi Nasional",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Ekonomi Nasional" });
+          },
+        },
+        {
+          label: "Industri Perdagangan Retail",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Industri Perdagangan Retail" });
+          },
+        },
+        {
+          label: "Industri Perdagangan Grosir",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Industri Perdagangan Grosir" });
+          },
+        },
+        {
+          label: "Real Estate",
+          url: "",
+          command: () => {
+            setCategorySelected({ label: "Real Estate" });
+          },
+        },
+      ],
+    },
+  ];
+
+  const [categorySelected, setCategorySelected] = useState({
+    label: "Industri Pertanian & Perkebunan",
+  });
 
   const handleClick = (idx) => {
     setBtn(idx);
   };
 
-  const handleChange = (e) => {
-    setCategory(e.target.value);
-
-    const _filter = dataCategory.list_industry_news.filter(
-      (v) => v.category === e.target.value
-    );
-
-    setDtSubcat(_filter[0].sub);
-  };
+  const handleChange = (e) => {};
 
   return (
     <>
@@ -77,39 +356,24 @@ function News() {
               onClick={() => handleClick("BNI")}
               className={`${style.btn} ${btn === "BNI" && style.btnActive}`}
             >
-              BNI News
+              BNI Knowledge
             </button>
           </div>
 
-          <div className={style.selectcontainer}>
-            {btn === "industry" && (
-              <>
-                <select
-                  value={category}
-                  className={style.select}
-                  onChange={handleChange}
-                >
-                  {dataCategory.list_industry_news.map((t, id) => (
-                    <option key={id} value={t.category}>
-                      {t.category}
-                    </option>
-                  ))}
-                </select>
-
-                <select
-                  // value={selectedType}
-                  className={style.select}
-                  // onChange={handleChange}
-                >
-                  {dtSubcat.map((t, id) => (
-                    <option key={id} value={t.title}>
-                      {t.title}
-                    </option>
-                  ))}
-                </select>
-              </>
-            )}
-          </div>
+          {btn === "industry" && (
+            <div className={style.selectcontainer}>
+              <TieredMenu
+                model={categoryType}
+                popup
+                ref={menu}
+                breakpoint="767px"
+              />
+              <div onMouseOver={(e) => menu.current.toggle(e)}>
+                {categorySelected.label}
+                <i className="pi pi-angle-down" />
+              </div>
+            </div>
+          )}
         </div>
 
         <Slider {...settings}>
