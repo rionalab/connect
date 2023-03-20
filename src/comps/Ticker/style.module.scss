@@ -156,7 +156,7 @@
   display: inline-block;
   margin: 0 16px;
   align-content: center;
-  width: 170px;
+  max-width: 175px;
   color: white;
   span {
     font-size: 12px;
@@ -167,7 +167,7 @@
     align-items: center;
     column-gap: 8px;
     display: grid;
-    grid-template-columns: 40px 30px repeat(2, 40px);
+    grid-template-columns: 40px 30px repeat(2, 1fr);
     & > div {
       &:nth-child(1) {
         text-align: center;
@@ -177,6 +177,7 @@
         place-items: center;
         img {
           width: 30px;
+          height: 20px;
         }
       }
       &:nth-child(3) {
