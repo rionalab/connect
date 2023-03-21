@@ -18,7 +18,7 @@ function Links() {
         onHide={() => setVisible(false)}
       >
         <div className={style.containermenu}>
-          <p>Booklet PPA Category</p>
+          <p>Info Produk Perusahaan Anak</p>
           <div className={style.content}>
             {dataLink.data.bookletPPA.map((menu, i) => (
               <a href={menu.url} target={`_blank`} key={i}>
@@ -37,7 +37,7 @@ function Links() {
         onHide={() => setVisible2(false)}
       >
         <div className={style.containermenu}>
-          <p>Orange Magazine Menu Category</p>
+          <p>Info Produk BNI</p>
           <div className={style.content}>
             {dataLink.data.orangeMagazine.map((menu, i) => (
               <a href={menu.url} target={`_blank`} key={i}>
@@ -62,12 +62,12 @@ function Links() {
 
           <button className={style.link} onClick={() => setVisible2(true)}>
             <img src="images/newspaper.png" alt="k" />
-            <span>Orange Magazine</span>
+            <span>Info Produk BNI</span>
           </button>
 
           <button className={style.link} onClick={() => setVisible(true)}>
             <img src="images/catalog.png" alt="l" />
-            <span>Booklet PPA</span>
+            <span>Produk Perusahaan Anak</span>
           </button>
 
           <a
