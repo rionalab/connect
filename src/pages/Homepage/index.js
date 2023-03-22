@@ -46,7 +46,11 @@ function Homepage() {
   };
 
   const getFeed = async () => {
-    await fetch(url)
+    await fetch(url, {
+      credentials: "include",
+      method: "GET",
+      headers: { "Content-Type": "text/xml" },
+    })
       .then((res) => res.text())
       .then((data) =>
         parseString(data, (err, res) => {
@@ -85,7 +89,7 @@ function Homepage() {
   };
 
   React.useEffect(() => {
-    getFeed();
+    // getFeed();
     // getKurs();
     getKurs2();
   }, []);

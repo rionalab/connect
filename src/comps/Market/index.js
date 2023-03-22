@@ -34,7 +34,7 @@ function Market() {
       <h3>Market Update</h3>
       <div className={style.market}>
         <a
-          href="/Morning View 20230314.pdf"
+          href="/Morning View 20230320.pdf"
           target="_blank"
           className={style.item}
         >
@@ -44,7 +44,7 @@ function Market() {
           </label>
         </a>
         <a
-          href="/Fixed Income weekly Update 13 Maret 2023.pdf"
+          href="/Fixed Income weekly Update 20 Maret 2023.pdf"
           target="_blank"
           className={style.item}
         >
@@ -54,7 +54,7 @@ function Market() {
           </label>
         </a>
         <a
-          href="/Market Wrap (06 - 10 Maret 2023).pdf"
+          href="/Market Wrap (13 - 17 Maret 2023).pdf"
           target="_blank"
           className={style.item}
         >
