@@ -5,9 +5,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import style from "./style.module.scss";
-import dataCategory from "data/category_news.json";
 import { Dialog } from "primereact/dialog";
 import { TieredMenu } from "primereact/tieredmenu";
+import { pdfUrl } from "config";
 
 var settings = {
   infinite: true,
@@ -318,8 +318,6 @@ function News() {
     setBtn(idx);
   };
 
-  const handleChange = (e) => {};
-
   return (
     <>
       <Dialog
@@ -380,7 +378,12 @@ function News() {
           {data.data[`${btn}`].map((row, i) => {
             return (
               <div className={style.sliderItem} key={i}>
-                <a href={row.url} key={i} target="_blank" rel="noreferrer">
+                <a
+                  href={pdfUrl + row.url}
+                  key={i}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img src={row.image} alt="img" />
                   {row.title !== "" && (
                     <div className={style.label}>{row.title}</div>
@@ -392,7 +395,7 @@ function News() {
         </Slider>
 
         <div className={style.showdiv}>
-          <a onClick={() => setShowNotif(true)} className={style.more}>
+          <a href="#" onClick={() => setShowNotif(true)} className={style.more}>
             Show more from {btn}
           </a>
         </div>

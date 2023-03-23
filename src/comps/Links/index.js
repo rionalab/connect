@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import style from "./style.module.scss";
 import dataLink from "data/links.json";
 import { Dialog } from "primereact/dialog";
+import { pdfUrl } from "config";
 
 function Links() {
   const [visible, setVisible] = useState(false);
@@ -21,7 +22,7 @@ function Links() {
           <p>Info Produk Perusahaan Anak</p>
           <div className={style.content}>
             {dataLink.data.bookletPPA.map((menu, i) => (
-              <a href={menu.url} target={`_blank`} key={i}>
+              <a href={pdfUrl + menu.url} target={`_blank`} key={i}>
                 <img src={menu.image} alt={menu.title} />
                 <span>{menu.title}</span>
               </a>

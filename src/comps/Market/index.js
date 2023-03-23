@@ -1,3 +1,4 @@
+import { pdfUrl } from "config";
 import React, { useState } from "react";
 import style from "./style.module.scss";
 
@@ -34,7 +35,7 @@ function Market() {
       <h3>Market Update</h3>
       <div className={style.market}>
         <a
-          href="/Morning View 20230314.pdf"
+          href={`${pdfUrl}/Morning View 20230314.pdf`}
           target="_blank"
           className={style.item}
         >
@@ -44,7 +45,7 @@ function Market() {
           </label>
         </a>
         <a
-          href="/Fixed Income weekly Update 13 Maret 2023.pdf"
+          href={`${pdfUrl}/Fixed Income weekly Update 13 Maret 2023.pdf`}
           target="_blank"
           className={style.item}
         >
@@ -54,7 +55,7 @@ function Market() {
           </label>
         </a>
         <a
-          href="/Market Wrap (06 - 10 Maret 2023).pdf"
+          href={`${pdfUrl}/Market Wrap (06 - 10 Maret 2023).pdf`}
           target="_blank"
           className={style.item}
         >
@@ -64,7 +65,7 @@ function Market() {
           </label>
         </a>
         <a
-          href="/Market Outlook 2023 (February).pdf"
+          href={`${pdfUrl}/Market Outlook 2023 (February).pdf`}
           target="_blank"
           className={style.item}
         >
