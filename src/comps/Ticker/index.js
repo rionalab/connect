@@ -1,29 +1,12 @@
 import React, { useState, useEffect } from "react";
 import style from "./style.module.scss";
-import dataKurs from "data/kurs.json";
 import { Dialog } from "primereact/dialog";
 import Marquee from "react-fast-marquee";
+import { flag } from "config";
 
 function Ticker(props) {
   const { data, getKurs } = props;
   const [visible, setVisible] = useState(false);
-  const flag = [
-    "USD",
-    "SGD",
-    "AUD",
-    "EUR",
-    "GBD",
-    "CAD",
-    "CHF",
-    "HKD",
-    "JPY",
-    "SAR",
-    "MYR",
-    "THB",
-    "NZD",
-  ];
-
-  // console.log(data);
 
   return (
     <>

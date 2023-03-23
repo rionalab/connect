@@ -5,13 +5,12 @@ import React from "react";
 import style from "./style.module.scss";
 import Footer from "comps/Footer";
 import { parseString, processors, Builder } from "xml2js";
+import axios from "axios";
 
 function Homepage() {
   const [dataKurs, setDataKurs] = React.useState(null);
   const url =
     "https://news.google.com/rss/search?q=Industri+Mekanik+Elektrik&hl=id&gl=ID&ceid=ID:id";
-  // "https://www.youtube.com/feeds/videos.xml?channel_id=UC4woSp8ITBoYDmjkukhEhxg";
-  // "https://rss.app/feeds/Pmmii6cU23Ne6qa4.xml";
 
   const urlKurs = "http://192.168.143.61:57004/CoreService";
 
@@ -47,7 +46,6 @@ function Homepage() {
 
   const getFeed = async () => {
     await fetch(url, {
-      credentials: "include",
       method: "GET",
       headers: { "Content-Type": "text/xml" },
     })

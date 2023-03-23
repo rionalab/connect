@@ -16,7 +16,7 @@ function Referral() {
     <div className={`${style.a}`}>
       <div className={style.header}>
         <div className={style.content}>
-          <img src="/images/Bank BNI.png" />
+          <img src="/images/Bank_BNI.png" alt="Logo BNI" />
           <span>Lead Referral Form</span>
         </div>
       </div>

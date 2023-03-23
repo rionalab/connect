@@ -36,6 +36,7 @@ function Market() {
       <div className={style.market}>
         <a
           href={`${pdfUrl}/Morning View 20230314.pdf`}
+          rel="noreferrer"
           target="_blank"
           className={style.item}
         >
@@ -47,6 +48,7 @@ function Market() {
         <a
           href={`${pdfUrl}/Fixed Income weekly Update 13 Maret 2023.pdf`}
           target="_blank"
+          rel="noreferrer"
           className={style.item}
         >
           <img src={"/images/market-research.png"} alt="i" />
@@ -57,6 +59,7 @@ function Market() {
         <a
           href={`${pdfUrl}/Market Wrap (06 - 10 Maret 2023).pdf`}
           target="_blank"
+          rel="noreferrer"
           className={style.item}
         >
           <img alt="a" src={"/images/market-trends.png"} />
@@ -67,6 +70,7 @@ function Market() {
         <a
           href={`${pdfUrl}/Market Outlook 2023 (February).pdf`}
           target="_blank"
+          rel="noreferrer"
           className={style.item}
         >
           <img src={"/images/analytics.png"} alt="i" />
